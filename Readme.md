@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Алексей Бондарь](https://up.htmlacademy.ru/adaptive/23/user/1785841).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец] (https://htmlacademy.ru/profile/seraphim).
 
 ---
 
