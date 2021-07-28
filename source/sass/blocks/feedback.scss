@@ -1,0 +1,48 @@
+.feedback__header {
+  padding: 0 15px;
+  padding-bottom: 15px;
+}
+
+.feedback__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 35px;
+}
+
+.feedback__intro {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.feedback__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  position: relative;
+  margin: 30px 0;
+}
+
+.feedback__fieldset::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  bottom: -10px;
+  background-image: url("../img/separator.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feedback-form__field::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--black);
+}

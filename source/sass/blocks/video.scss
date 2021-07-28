@@ -1,0 +1,20 @@
+.video {
+  padding: 20px 0;
+}
+
+.video__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.video__intro {
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.video__video {
+  object-fit: contain;
+}

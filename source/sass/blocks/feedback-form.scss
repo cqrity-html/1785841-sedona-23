@@ -1,0 +1,49 @@
+.feedback-form input {
+  border: none;
+  background-color: var(--background);
+  padding-left: 22px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.feedback-form__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 19px;
+}
+
+.feedback-form__label {
+  font-size: 14px;
+  line-height: 26px;
+  margin-right: 20px;
+}
+
+.feedback-form__label--radio,
+.feedback-form__label--checkbox {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+}
+
+.feedback-form__feedback-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form textarea {
+  border: none;
+  background-color: var(--background);
+  resize: none;
+  width: 279px;
+  height: 160px;
+  margin-bottom: 51px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.feedback-form__button {
+  text-align: center;
+}

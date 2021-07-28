@@ -1,0 +1,16 @@
+@mixin wrapper() {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+@mixin button() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--blue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}

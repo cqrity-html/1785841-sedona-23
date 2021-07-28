@@ -1,0 +1,25 @@
+.photo-description__title {
+  font-weight: bold;
+}
+
+.photo-description__author {
+  text-transform: none;
+}
+
+.photo-description__likes {
+  font-weight: bold;
+  position: relative;
+  padding-left: 40px;
+}
+
+.photo-description__likes::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 21px;
+  left: 0;
+  bottom: 3px;
+  background-image: url("../img/icon-like.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

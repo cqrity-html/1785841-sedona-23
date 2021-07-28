@@ -1,0 +1,31 @@
+.hotel-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotel-search__title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.hotel-search__description {
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hotel-search__button {
+  @include button;
+  margin-bottom: 49px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hotel-search__map {
+  object-fit: cover;
+}
