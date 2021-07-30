@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: SEDONA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -13,8 +14,10 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-small.svg" width="102" height="84" alt="Логотип сайта SEDONA">
+    <a class="page-header__logo" href="index.html">
+      <div class="page-header__wrapper">
+        <img src="img/logo-small.svg" width="102" height="84" alt="Логотип сайта SEDONA">
+      </div>
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -22,56 +25,59 @@
       </button>
       <ul class="main-nav__list visually-hidden">
         <li class="main-nav__item">
-          <a href="index.html">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="catalog.html">Фото и видео</a>
+          <a class="main-nav__link" href="catalog.html">Фото и видео</a>
         </li>
         <li class="main-nav__item main-nav__item--current">
-          <a>Форма отзыва</a>
+          <a class="main-nav__link">Форма отзыва</a>
         </li>
         <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Acamedy</a>
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Acamedy</a>
         </li>
+        <button class="main-nav__close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
       </ul>
     </nav>
     <section class="page-header__intro">
       <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <img class="page-header__intro-logo" src="img/intro-small.jpg" width="320" height="214" alt="Логотип курортного городка сайта SEDONA">
+      <img class="page-header__intro-logo" src="img/intro-small.jpg" width="320" height="162" alt="Логотип курортного городка сайта SEDONA">
     </section>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт курортного городка "SEDONA"</h1>
     <section class="feedback">
       <header class="feedback__header">
-        <h2 class="feedback__slogan">Оставьте свой отзыв</h2>
+        <h2 class="feedback__title">Оставьте свой отзыв</h2>
         <p class="feedback__intro">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </header>
       <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="feedback__fieldset feedback__fieldset--name">
           <legend class="feedback-form__title">Представьтесь:</legend>
-          <label class="feedback-form__label">
+          <label class="feedback-form__label feedback-form__label--name">
             Имя*:
-            <input class="feedback-form__field" type="text" name="name" placeholder="Петр">
+            <input class="feedback-form__field feedback-form__field--name" type="text" name="name" placeholder="Петр">
           </label>
-          <label class="feedback-form__label">
+          <label class="feedback-form__label feedback-form__label--name">
             Фамилия*:
-            <input class="feedback-form__field" type="text" name="family-name" placeholder="Иванов">
+            <input class="feedback-form__field feedback-form__field--name" type="text" name="family-name" placeholder="Иванов">
           </label>
-          <label class="feedback-form__label">
+          <label class="feedback-form__label feedback-form__label--name">
             Отчество:
-            <input class="feedback-form__field" type="text" name="surname" placeholder="Александрович">
+            <input class="feedback-form__field feedback-form__field--name" type="text" name="surname" placeholder="Александрович">
           </label>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--contacts">
           <legend class="feedback-form__title">Контактная информация:</legend>
-          <label class="feedback-form__label">
-            Телефон:
-            <input class="feedback-form__field" type="tel" name="phone" placeholder="Введите телефон">
+          <label class="feedback-form__label feedback-form__label--contact">
+            Контактный телефон:
+            <input class="feedback-form__field feedback-form__field--contact" type="tel" name="phone" placeholder="Введите телефон">
           </label>
-          <label class="feedback-form__label">
+          <label class="feedback-form__label feedback-form__label--contact">
             Электронная почта:
-            <input class="feedback-form__field" type="email" name="email" placeholder="Введите email">
+            <input class="feedback-form__field feedback-form__field--contact" type="email" name="email" placeholder="Введите email">
           </label>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--impression">
@@ -162,6 +168,7 @@
       <button class="modal__button modal__button--close" type="button">Закрыть окно</button>
     </div>
   </section>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

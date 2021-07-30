@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: SEDONA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -14,7 +15,9 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="img/logo-small.svg" width="102" height="84" alt="Логотип сайта SEDONA">
+      <div class="page-header__wrapper">
+        <img src="img/logo-small.svg" width="102" height="84" alt="Логотип сайта SEDONA">
+      </div>
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -33,6 +36,9 @@
         <li class="main-nav__item">
           <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Acamedy</a>
         </li>
+        <button class="main-nav__close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
       </ul>
     </nav>
     <section class="page-header__intro page-header__intro--index">
@@ -129,5 +135,6 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

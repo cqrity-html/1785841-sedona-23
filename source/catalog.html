@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: SEDONA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
@@ -13,8 +14,10 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logo-small.svg" width="102" height="84" alt="Логотип сайта SEDONA">
+    <a class="page-header__logo" href="index.html">
+      <div class="page-header__wrapper">
+        <img src="img/logo-small.svg" width="102" height="84" alt="Логотип сайта SEDONA">
+      </div>
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -22,22 +25,25 @@
       </button>
       <ul class="main-nav__list visually-hidden">
         <li class="main-nav__item">
-          <a href="index.html">Главная</a>
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item main-nav__item--current">
-          <a>Фото и видео</a>
+          <a class="main-nav__link">Фото и видео</a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html">Форма отзыва</a>
+          <a class="main-nav__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Acamedy</a>
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Acamedy</a>
         </li>
+        <button class="main-nav__close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
       </ul>
     </nav>
     <section class="page-header__intro">
       <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <img class="page-header__intro-logo" src="img/intro-small.jpg" width="320" height="214" alt="Логотип курортного городка сайта SEDONA">
+      <img class="page-header__intro-logo" src="img/intro-small.jpg" width="320" height="162" alt="Логотип курортного городка сайта SEDONA">
     </section>
   </header>
   <main class="page-main">
@@ -87,7 +93,7 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div>
-        <img class="video__video" src="img/video-presentation.jpg" width="800" height="500" alt="Кадр видеопрезентации с изображением горного моста">
+        <img class="video__video" src="img/video-presentation.jpg" width="320" height="201" alt="Кадр видеопрезентации с изображением горного моста">
       </div>
       <div class="video__controls"></div>
     </section>
@@ -119,6 +125,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

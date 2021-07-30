@@ -17,7 +17,13 @@
 .feedback-form__label {
   font-size: 14px;
   line-height: 26px;
-  margin-right: 20px;
+}
+
+.feedback-form__label--name {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
 }
 
 .feedback-form__label--radio,
@@ -27,6 +33,12 @@
   font-weight: bold;
   text-transform: none;
 }
+
+.feedback-form__field--contact {
+  margin-top: 15px;
+  width: 90%;
+}
+
 
 .feedback-form__feedback-message {
   display: flex;
@@ -46,4 +58,12 @@
 
 .feedback-form__button {
   text-align: center;
+}
+
+.feedback-form__field::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--black);
 }

@@ -2,13 +2,11 @@
   position: relative;
 }
 
-.page-header__logo {
-  position: absolute;
-  top: 0;
-  left: 109px;
-  z-index: 1;
-}
-
 .page-header__intro-logo {
   object-fit: cover;
+}
+
+.page-header__wrapper {
+  position: absolute;
+  width: 100%;
 }

@@ -1,3 +1,9 @@
+.feedback {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
 .feedback__header {
   padding: 0 15px;
   padding-bottom: 15px;
@@ -39,10 +45,10 @@
   background-position: 0 0;
 }
 
-.feedback-form__field::placeholder {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  color: var(--black);
+.feedback__fieldset--name {
+  padding: 0;
+}
+
+.feedback__fieldset--contacts {
+  padding: 0;
 }
