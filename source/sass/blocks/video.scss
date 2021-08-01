@@ -1,11 +1,21 @@
 .video {
-  padding: 20px 0;
+  padding: 20px 0 100px 0;
+  background-color: var(--white);
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 20px 60px;
+  }
 }
 
 .video__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .video__intro {
@@ -13,8 +23,22 @@
   line-height: 24px;
   margin-left: 30px;
   margin-right: 30px;
+
+  @media (min-width: 768px) {
+    margin: 0 95px 60px 95px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 310px 60px 310px;
+  }
 }
 
 .video__video {
   object-fit: contain;
+  width: 648px;
+  height: auto;
+
+  @media (min-width: 1200px) {
+    width: 800px;
+  }
 }

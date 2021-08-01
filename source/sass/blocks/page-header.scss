@@ -2,11 +2,43 @@
   position: relative;
 }
 
-.page-header__intro-logo {
-  object-fit: cover;
-}
-
 .page-header__wrapper {
   position: absolute;
   width: 100%;
+  height: 84px;
+  background-image: url("../../img/logo-small.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: 1200px) {
+    height: 96px;
+    background-image: url("../../img/logo.svg");
+    background-position: center;
+  }
+}
+
+.page-header__intro {
+  width: 100%;
+  height: 158px;
+  background-image: url("../../img/intro-small.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: 768px) {
+    height: 296px;
+    background-image: url("../../img/intro.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+  }
+}
+
+.page-header__intro--index {
+  height: 389px;
+  background-image: url("../../img/intro-index-small.jpg");
+
+  @media (min-width: 768px) {
+    height: 518px;
+    background-image: url("../../img/intro-index.jpg");
+    background-size: cover;
+  }
 }

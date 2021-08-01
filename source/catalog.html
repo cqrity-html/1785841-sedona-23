@@ -15,9 +15,7 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <div class="page-header__wrapper">
-        <img src="img/logo-small.svg" width="102" height="84" alt="Логотип сайта SEDONA">
-      </div>
+      <div class="page-header__wrapper"></div>
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -25,6 +23,11 @@
       </button>
       <div class="main-nav__menu">
         <ul class="main-nav__list visually-hidden">
+          <li class="main-nav__close">
+            <button class="main-nav__close-button" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
+          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -38,14 +41,10 @@
             <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Acamedy</a>
           </li>
         </ul>
-        <button class="main-nav__close visually-hidden" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
       </div>
     </nav>
     <section class="page-header__intro">
       <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <img class="page-header__intro-logo" src="img/intro-small.jpg" width="320" height="162" alt="Логотип курортного городка сайта SEDONA">
     </section>
   </header>
   <main class="page-main">
@@ -58,7 +57,7 @@
       </header>
       <ul class="gallery__list">
         <li class="gallery__item gallery-photo">
-          <img class="gallery-photo__image" src="img/foreign-lands.jpg" width="280" height="280" alt="Фото дороги в лучах заката">
+          <img class="gallery-photo__image gallery-photo__image--first" src="img/foreign-lands.jpg" width="280" height="280" alt="Фото дороги в лучах заката">
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Неродные просторы</p>
             <p class="photo-description__author">Автор фото: Борис</p>
@@ -82,7 +81,7 @@
           </div>
         </li>
         <li class="gallery__item gallery-photo">
-          <img class="gallery-photo__image" src="img/foreign-lands.jpg" width="280" height="280" alt="Фото горного моста">
+          <img class="gallery-photo__image" src="img/devils-bridge.jpg" width="280" height="280" alt="Фото горного моста">
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Мост дьявола</p>
             <p class="photo-description__author">Автор фото: Антон</p>
@@ -96,13 +95,34 @@
       <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div>
         <img class="video__video" src="img/video-presentation.jpg" width="320" height="201" alt="Кадр видеопрезентации с изображением горного моста">
+        <div class="video__controls video-controls">
+          <div class="video-controls__progress-line">
+            <button class="video-controls__button" type="button">
+              <span class="visually-hidden">Ползунок громкости</span>
+              <img class="video-controls__volume" src="img/volume-control.svg" width="235" height="13" alt="">
+            </button>
+          </div>
+          <div class="video-controls__buttons">
+            <button class="video-controls__button" type="button">
+              <span class="visually-hidden">Возпроизвести сначала</span>
+              <img class="video-controls__volume" src="img/replay-control.svg" width="16" height="20" alt="">
+            </button>
+            <button class="video-controls__button" type="button">
+              <span class="visually-hidden">Субтитры</span>
+              <img class="video-controls__volume" src="img/subtitiles-control.svg" width="32" height="20" alt="">
+            </button>
+            <button class="video-controls__button" type="button">
+              <span class="visually-hidden">Полноэкранный вид</span>
+              <img class="video-controls__volume" src="img/fullscreen-control.svg" width="20" height="20" alt="">
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="video__controls"></div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__contact contact">
-      <a class="contact__link" href="#">#VISITSEDONA</a>
+      <a class="page-footer__contact-link" href="#">#VISITSEDONA</a>
     </div>
     <div class="page-footer__social social">
       <ul class="social__list">
@@ -121,7 +141,7 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
+      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
       </a>

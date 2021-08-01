@@ -15,9 +15,7 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <div class="page-header__wrapper">
-        <img src="img/logo-small.svg" width="102" height="84" alt="Логотип сайта SEDONA">
-      </div>
+      <div class="page-header__wrapper"></div>
     </a>
     <nav class="page-header__nav main-nav">
       <button class="main-nav__toggle" type="button">
@@ -25,6 +23,11 @@
       </button>
       <div class="main-nav__menu">
         <ul class="main-nav__list visually-hidden">
+          <li class="main-nav__close">
+            <button class="main-nav__close-button" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
+          </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -38,14 +41,10 @@
             <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Acamedy</a>
           </li>
         </ul>
-        <button class="main-nav__close visually-hidden" type="button">
-          <span class="visually-hidden">Закрыть меню</span>
-        </button>
       </div>
     </nav>
     <section class="page-header__intro">
       <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
-      <img class="page-header__intro-logo" src="img/intro-small.jpg" width="320" height="162" alt="Логотип курортного городка сайта SEDONA">
     </section>
   </header>
   <main class="page-main">
@@ -58,15 +57,15 @@
       <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="feedback__fieldset feedback__fieldset--name">
           <legend class="feedback-form__title">Представьтесь:</legend>
-          <label class="feedback-form__label feedback-form__label--name">
+          <label class="feedback-form__label feedback-form__label--name feedback-form__label--first-name">
             Имя*:
             <input class="feedback-form__field feedback-form__field--name" type="text" name="name" placeholder="Петр">
           </label>
-          <label class="feedback-form__label feedback-form__label--name">
+          <label class="feedback-form__label feedback-form__label--name feedback-form__label--family-name">
             Фамилия*:
             <input class="feedback-form__field feedback-form__field--name" type="text" name="family-name" placeholder="Иванов">
           </label>
-          <label class="feedback-form__label feedback-form__label--name">
+          <label class="feedback-form__label feedback-form__label--name feedback-form__label--surname">
             Отчество:
             <input class="feedback-form__field feedback-form__field--name" type="text" name="surname" placeholder="Александрович">
           </label>
@@ -74,12 +73,12 @@
         <fieldset class="feedback__fieldset feedback__fieldset--contacts">
           <legend class="feedback-form__title">Контактная информация:</legend>
           <label class="feedback-form__label feedback-form__label--contact">
-            Контактный телефон:
-            <input class="feedback-form__field feedback-form__field--contact" type="tel" name="phone" placeholder="Введите телефон">
+            Контактный телефон*:
+            <input class="feedback-form__field feedback-form__field--contact feedback-form__field--phone" type="tel" name="phone" placeholder="Введите телефон">
           </label>
           <label class="feedback-form__label feedback-form__label--contact">
-            Электронная почта:
-            <input class="feedback-form__field feedback-form__field--contact" type="email" name="email" placeholder="Введите email">
+            Электронная почта*:
+            <input class="feedback-form__field feedback-form__field--contact feedback-form__field--email" type="email" name="email" placeholder="Введите email">
           </label>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--impression">
@@ -99,29 +98,29 @@
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--sights">
           <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
-            <label class="feedback-form__label feedback-form__label--checkbox">
-              <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Мост Дьявола" checked>
-              Мост Дьявола
-            </label>
-            <label class="feedback-form__label feedback-form__label--checkbox">
-              <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Гора-Колокол" checked>
-              Гора-Колокол
-            </label>
-            <label class="feedback-form__label feedback-form__label--checkbox">
-              <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Слайд-парк" checked>
-              Слайд-парк
-            </label>
-            <label class="feedback-form__label feedback-form__label--checkbox">
-              <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Красные скалы">
-              Красные скалы
-            </label>
+          <label class="feedback-form__label feedback-form__label--checkbox">
+            <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Мост Дьявола" checked>
+            Мост Дьявола
+          </label>
+          <label class="feedback-form__label feedback-form__label--checkbox">
+            <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Гора-Колокол" checked>
+            Гора-Колокол
+          </label>
+          <label class="feedback-form__label feedback-form__label--checkbox">
+            <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Слайд-парк" checked>
+            Слайд-парк
+          </label>
+          <label class="feedback-form__label feedback-form__label--checkbox">
+            <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Красные скалы">
+            Красные скалы
+          </label>
         </fieldset>
         <div class="feedback__message">
           <h3 class="feedback-form__title">Опишите свои эмоции:</h3>
           <textarea class="feedback-form__field" name="message" placeholder="Опишите подробно все свои восторги"></textarea>
-          <div>
-            <button type="submit">Отправьте отзыв</button>
-            <p class="visually-hidden">* — обязательные поля</p>
+          <div class="feedback-form__footer">
+            <button class="feedback-form__button" type="submit">Отправить отзыв</button>
+            <p class="feedback-form__footnote">* — обязательные поля</p>
           </div>
         </div>
       </form>
@@ -129,7 +128,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__contact contact">
-      <a class="contact__link" href="#">#VISITSEDONA</a>
+      <a class="page-footer__contact-link" href="#">#VISITSEDONA</a>
     </div>
     <div class="page-footer__social social">
       <ul class="social__list">
@@ -148,20 +147,20 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
+      <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="">
       </a>
     </div>
   </footer>
-  <section class="modal modal--error">
+  <section class="modal modal--error visually-hidden">
     <h2 class="modal__title">Что-то пошло не так!</h2>
     <p class="modal__text">
       Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить.
     </p>
     <button class="modal__button modal__button--ok" type="button">Ок</button>
   </section>
-  <section class="modal modal--success">
+  <section class="modal modal--success visually-hidden">
     <h2 class="modal__title">Ваш отзыв отправлен!</h2>
     <p class="modal__text">
       Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.

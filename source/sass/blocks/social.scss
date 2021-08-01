@@ -13,6 +13,14 @@
   background-color: var(--blue);
   width: 47px;
   height: 47px;
+
+  &:hover {
+    background-color: var(--dark-blue);
+  }
+
+  &:active {
+    background-color: var(--darkest-blue);
+  }
 }
 
 .social__link {
