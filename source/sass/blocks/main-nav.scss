@@ -1,0 +1,142 @@
+.main-nav {
+  min-height: 56px;
+  background-color: var(--white);
+}
+
+.main-nav__toggle {
+  position: absolute;
+  border: none;
+  background: none;
+  top: 17px;
+  right: 17px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 320px;
+  height: 223px;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    justify-content: space-around;
+    width: 100%;
+    height: 56px;
+  }
+}
+
+.main-nav__item {
+  background-color: var(--blue);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  box-shadow:
+    inset 0 -1px 0 0 var(--dark-shadow),
+    inset 0 1px 0 0 var(--light-shadow);
+
+  &:hover {
+    background-color: var(--dark-blue);
+  }
+
+  &:active {
+    background-color: var(--darkest-blue);
+    color: var(--white-transparent);
+  }
+
+  @media (min-width: 768px) {
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: none;
+    margin: 0;
+  }
+}
+
+.main-nav__item:nth-child(3) {
+  @media (min-width: 768px) {
+    margin-right: 70px;
+  }
+}
+
+.main-nav__item:nth-child(4) {
+  @media (min-width: 768px) {
+    margin-left: 70px;
+  }
+}
+
+.main-nav__item--current {
+  @media (min-width: 768px) {
+    color: var(--special);
+  }
+}
+
+.main-nav__link {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 40px;
+
+  @media (min-width: 768px) {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+
+    &:hover {
+      color: var(--blue);
+    }
+
+    &:active {
+      color: var(--gray-shadow);
+    }
+  }
+}
+
+.main-nav__menu {
+  position: relative;
+}
+
+.main-nav__close {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-nav__close-button {
+  position: absolute;
+  border: none;
+  background: none;
+}
+
+.main-nav__close-button::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 16px;
+  left: 120px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

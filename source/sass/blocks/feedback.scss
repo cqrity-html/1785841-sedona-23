@@ -1,0 +1,152 @@
+.feedback {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--white);
+}
+
+
+.feedback__header {
+  padding: 30px 15px;
+
+  @media (min-width: 1200px) {
+    padding: 60px 15px;
+  }
+}
+
+.feedback__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.feedback__intro {
+  font-size: 14px;
+  line-height: 26px;
+
+  @media (min-width: 768px) {
+    line-height: 24px;
+    margin: 0 130px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0 345px;
+  }
+}
+
+.feedback__fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  position: relative;
+  margin: 30px 0;
+}
+
+.feedback__fieldset::after {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  bottom: -10px;
+  background-image: url("../img/separator.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.feedback__fieldset--name {
+  padding-bottom: 20px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    order: -2;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 20px;
+  }
+}
+
+.feedback__fieldset--name legend {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.feedback__fieldset--contacts {
+  padding-bottom: 20px;
+  grid-column: span 2;
+
+  @media (min-width: 768px) {
+    order: -1;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+}
+
+.feedback__fieldset--impression {
+  @media (min-width: 768px) {
+    order: -3;
+    align-items: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.feedback__fieldset--sights {
+  grid-column: span 2;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.feedback__fieldset--sights legend {
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 40px;
+
+  @media (min-width: 1200px) {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+.feedback__message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-column: span 2;
+}

@@ -1,0 +1,30 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 35px 20px;
+  gap: 33px;
+  background-color: var(--white);
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 70px;
+  }
+}
+
+.page-footer__contact-link {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.page-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}

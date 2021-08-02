@@ -1,0 +1,220 @@
+.feedback-form {
+  @media (min-width: 768px) {
+    padding: 0 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 55px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 120px;
+  }
+}
+
+.feedback-form input {
+  border: none;
+  background-color: var(--background);
+  padding-left: 22px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.feedback-form__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 19px;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+}
+
+.feedback-form__label {
+  font-size: 14px;
+  line-height: 26px;
+  width: 100%;
+}
+
+.feedback-form__label--name {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.feedback-form__field--name {
+  width: 100%;
+  margin-left: 10px;
+  height: 53px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.feedback-form__label--radio,
+.feedback-form__label--checkbox {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  padding: 15px 0 15px 65px;
+  position: relative;
+}
+
+.feedback-form__label--checkbox {
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 80px;
+  }
+}
+
+.feedback-form__label--radio input,
+.feedback-form__label--checkbox input {
+  display: none;
+}
+
+/*.feedback-form__label--radio::before {
+  position: absolute;
+  background-image: url(../../img/radio.svg);
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+..feedback-form__label--radio::before:checked {
+  position: absolute;
+  background-image: url(../../img/radio-checked.svg);
+  width: 48px;
+  height: 48px;
+  top: 0;
+  left: 0;
+}
+
+.feedback-form__label--checkbox::before {
+  position: absolute;
+  background-image: url(../../img/checkbox.svg);
+  width: 46px;
+  height: 46px;
+  top: 0;
+  left: 0;
+}
+
+..feedback-form__label--checkbox::before:checked {
+  position: absolute;
+  background-image: url(../../img/radio-checked.svg);
+  width: 46px;
+  height: 46px;
+  top: 0;
+  left: 0;
+}*/
+
+.feedback-form__label--contact {
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    width: 481px;
+  }
+}
+
+.feedback-form__field--contact {
+  margin-top: 15px;
+  width: 90%;
+
+  @media (min-width: 768px) {
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    width: 257px;
+    height: 58px;
+    box-sizing: border-box;
+    margin-left: 15px;
+  }
+}
+
+.feedback-form__field--phone,
+.feedback-form__field--email {
+  position: relative;
+}
+
+.feedback-form__field--contact::before {
+  position: absolute;
+  background-image: url("../../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  right: 0;
+  width: 58px;
+  height: 58px;
+}
+
+.feedback-form__field--email::before {
+  position: absolute;
+  background-image: url("../../img/icon-email.svg");
+  background-repeat: no-repeat;
+  right: 0;
+}
+
+
+.feedback-form__feedback-message {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-form textarea {
+  border: none;
+  background-color: var(--background);
+  resize: none;
+  width: 279px;
+  height: 160px;
+  margin-bottom: 51px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+
+.feedback-form__button {
+  @include button;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 17px;
+  min-width: 280px;
+}
+
+.feedback-form__field::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--black);
+}
+
+.feedback-form__footer {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.feedback-form__footnote {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: inline;
+  }
+}
