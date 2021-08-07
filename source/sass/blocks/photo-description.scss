@@ -2,6 +2,7 @@
   @media (min-width: 768px) {
     background-color: var(--beige);
     height: 80px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,7 +13,7 @@
   @media (min-width: 1200px) {
     background-color: var(--black-transparent);
     position: absolute;
-    bottom: 4px;
+    bottom: 0;
     width: 100%;
     color: var(--white);
   }

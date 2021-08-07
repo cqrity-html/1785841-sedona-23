@@ -4,7 +4,6 @@
   background-color: var(--white);
 }
 
-
 .feedback__header {
   padding: 30px 15px;
 
@@ -114,6 +113,8 @@
 
 .feedback__fieldset--sights {
   grid-column: span 2;
+  width: 100%;
+  padding: 0;
 
   @media (min-width: 768px) {
     display: flex;
@@ -133,8 +134,6 @@
 }
 
 .feedback__fieldset--sights legend {
-  padding-left: 150px;
-  padding-right: 150px;
   margin-bottom: 40px;
 
   @media (min-width: 1200px) {

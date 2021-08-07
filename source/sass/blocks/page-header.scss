@@ -1,32 +1,40 @@
 .page-header {
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-.page-header__wrapper {
+.page-header__logo {
   position: absolute;
-  width: 100%;
+  width: 102px;
   height: 84px;
-  background-image: url("../../img/logo-small.svg");
-  background-repeat: no-repeat;
+  left: 34%;
+  background-image: url("../img/logo-small.svg");
   background-position: center;
 
+  @media (min-width: 768px) {
+    left: 43%;
+    background-image: url("../img/logo-tablet.svg");
+  }
+
   @media (min-width: 1200px) {
+    left: 42%;
     height: 96px;
-    background-image: url("../../img/logo.svg");
-    background-position: center;
+    width: 187px;
+    background-image: url("../img/logo.svg");
   }
 }
 
 .page-header__intro {
   width: 100%;
   height: 158px;
-  background-image: url("../../img/intro-small.jpg");
+  background-image: url("../img/intro-small.jpg");
   background-repeat: no-repeat;
   background-position: center;
 
   @media (min-width: 768px) {
     height: 296px;
-    background-image: url("../../img/intro.jpg");
+    background-image: url("../img/intro.jpg");
     background-size: cover;
     background-position: 50% 0;
   }
@@ -34,11 +42,11 @@
 
 .page-header__intro--index {
   height: 389px;
-  background-image: url("../../img/intro-index-small.jpg");
+  background-image: url("../img/intro-index-small.jpg");
 
   @media (min-width: 768px) {
     height: 518px;
-    background-image: url("../../img/intro-index.jpg");
+    background-image: url("../img/intro-index.jpg");
     background-size: cover;
   }
 }
