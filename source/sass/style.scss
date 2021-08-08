@@ -6,18 +6,19 @@
 
 //blocks
 
-@import "blocks/page.scss";
-@import "blocks/page-header.scss";
-@import "blocks/main-nav.scss";
 @import "blocks/advantages.scss";
+@import "blocks/copyright.scss";
 @import "blocks/feedback-form.scss";
 @import "blocks/feedback.scss";
-@import "blocks/gallery.scss";
 @import "blocks/gallery-photo.scss";
+@import "blocks/gallery.scss";
 @import "blocks/hotel-search.scss";
-@import "blocks/page-footer.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/modal.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page.scss";
 @import "blocks/photo-description.scss";
 @import "blocks/social.scss";
-@import "blocks/video.scss";
 @import "blocks/video-controls.scss";
+@import "blocks/video.scss";

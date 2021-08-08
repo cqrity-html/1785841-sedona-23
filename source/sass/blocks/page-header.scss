@@ -8,17 +8,16 @@
   position: absolute;
   width: 102px;
   height: 84px;
-  left: 34%;
+  left: 50%;
+  transform: translateX(-50%);
   background-image: url("../img/logo-small.svg");
   background-position: center;
 
   @media (min-width: 768px) {
-    left: 43%;
     background-image: url("../img/logo-tablet.svg");
   }
 
   @media (min-width: 1200px) {
-    left: 42%;
     height: 96px;
     width: 187px;
     background-image: url("../img/logo.svg");

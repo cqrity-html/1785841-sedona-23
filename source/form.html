@@ -68,48 +68,42 @@
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--contacts">
           <legend class="feedback-form__title">Контактная информация:</legend>
-          <label class="feedback-form__label feedback-form__label--contact">
+          <label class="feedback-form__label feedback-form__label--contact feedback-form__label--phone">
             Контактный телефон*:
-            <input class="feedback-form__field feedback-form__field--contact feedback-form__field--phone" type="tel" name="phone" placeholder="Введите телефон">
+            <input class="feedback-form__field feedback-form__field--phone" type="tel" name="phone" placeholder="Введите телефон">
+            <svg class="feedback-form__field-icon" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="58" height="58" fill="#E6E6E6"/>
+              <path d="M24.6 27.8C26 30.6 28.4 32.9 31.2 34.4L33.4 32.2C33.7 31.9 34.1 31.8 34.4 32C35.5 32.4 36.7 32.6 38 32.6C38.6 32.6 39 33 39 33.6V37C39 37.6 38.6 38 38 38C28.6 38 21 30.4 21 21C21 20.4 21.4 20 22 20H25.5C26.1 20 26.5 20.4 26.5 21C26.5 22.2 26.7 23.4 27.1 24.6C27.2 24.9 27.1 25.3 26.9 25.6L24.6 27.8Z" fill="#010101"/>
+            </svg>
           </label>
-          <label class="feedback-form__label feedback-form__label--contact">
+          <label class="feedback-form__label feedback-form__label--contact feedback-form__label--email">
             Электронная почта*:
-            <input class="feedback-form__field feedback-form__field--contact feedback-form__field--email" type="email" name="email" placeholder="Введите email">
+            <input class="feedback-form__field feedback-form__field--email" type="email" name="email" placeholder="Введите email">
+            <svg class="feedback-form__field-icon" width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="58" height="58" fill="#E6E6E6"/>
+              <path d="M29 31C28.7 31 28.5 30.9 28 30.7L21 27V34C21 34.5 21.5 35 22 35H36C36.5 35 37 34.5 37 34V27L30 30.7C29.5 30.9 29.3 31 29 31ZM36 23H22C21.5 23 21 23.5 21 24V24.8L29 29L37 24.8V24C37 23.5 36.5 23 36 23Z" fill="black"/>
+              </svg>
           </label>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--impression">
-          <legend class="feedback-form__title">Ваше Общее впечатление:</legend>
-          <label class="feedback-form__label feedback-form__label--radio">
-            <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Скорее положительное" checked>
-            Скорее положительное
-          </label>
-          <label class="feedback-form__label feedback-form__label--radio">
-            <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Скорее отрицательное">
-            Скорее отрицательное
-          </label>
-          <label class="feedback-form__label feedback-form__label--radio">
-            <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Затрудняюсь ответить">
-            Затрудняюсь ответить
-          </label>
+          <legend class="feedback-form__title feedback-form__title--impression">Ваше Общее впечатление:</legend>
+          <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Скорее положительное" id="positive" checked>
+            <label class="feedback-form__label feedback-form__label--radio" for="positive">Скорее положительное</label>
+          <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Скорее отрицательное" id="negative">
+            <label class="feedback-form__label feedback-form__label--radio" for="negative">Скорее отрицательное</label>
+          <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Затрудняюсь ответить" id="neutral">
+            <label class="feedback-form__label feedback-form__label--radio" for="neutral">Затрудняюсь ответить</label>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--sights">
           <legend class="feedback-form__title">Посещенные достопримечательности:</legend>
-          <label class="feedback-form__label feedback-form__label--checkbox">
-            <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Мост Дьявола" checked>
-            Мост Дьявола
-          </label>
-          <label class="feedback-form__label feedback-form__label--checkbox">
-            <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Гора-Колокол" checked>
-            Гора-Колокол
-          </label>
-          <label class="feedback-form__label feedback-form__label--checkbox">
-            <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Слайд-парк" checked>
-            Слайд-парк
-          </label>
-          <label class="feedback-form__label feedback-form__label--checkbox">
-            <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Красные скалы">
-            Красные скалы
-          </label>
+          <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Мост Дьявола" id="devils-bridge" checked>
+            <label class="feedback-form__label feedback-form__label--checkbox" for="devils-bridge">Мост Дьявола</label>
+          <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Гора-Колокол" id="bell-mountain" checked>
+            <label class="feedback-form__label feedback-form__label--checkbox" for="bell-mountain">Гора-Колокол</label>
+          <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Слайд-парк" id="slide-park" checked>
+            <label class="feedback-form__label feedback-form__label--checkbox" for="slide-park">Слайд-парк</label>
+          <input class="feedback-form__checkbox" type="checkbox" name="feedback-form-checkbox" value="Красные скалы" id="red-rocks">
+            <label class="feedback-form__label feedback-form__label--checkbox" for="red-rocks">Красные скалы</label>
         </fieldset>
         <div class="feedback__message">
           <h3 class="feedback-form__title">Опишите свои эмоции:</h3>
@@ -157,7 +151,7 @@
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="copyright__image" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+        <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
           <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"/>
         </svg>
       </a>
