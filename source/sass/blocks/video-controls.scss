@@ -25,11 +25,14 @@
   background-image: url("../img/volume-control.svg");
   background-repeat: no-repeat;
   background-position: center;
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
     height: 93px;
     width: 648px;
+    padding-left: 10%;
     background-image: url("../img/volume-control-tablet.svg");
+    background-position-x: 35%;
   }
 
   @media (min-width: 1200px) {
@@ -43,7 +46,7 @@
   box-sizing: border-box;
   width: 85%;
   height: 66px;
-  /*background-color: var(--beige);*/
+  background-color: var(--beige);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,6 +67,7 @@
 
 .video-controls__button {
   border: none;
+  background: none;
 }
 
 .video-controls__button--replay {
@@ -85,10 +89,12 @@
     fill: var(--white);
 
     &:hover {
+      fill: var(--white);
       opacity: 0.6;
     }
 
     &:active {
+      fill: var(--white);
       opacity: 0.3;
     }
   }

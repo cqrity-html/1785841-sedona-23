@@ -27,25 +27,36 @@
 .page-header__intro {
   width: 100%;
   height: 158px;
-  background-image: url("../img/intro-small.jpg");
+  background-image:
+    url("../img/text-small.svg"),
+    url("../img/intro-small.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-size: 261px, cover;
+  background-position: center, bottom;
 
   @media (min-width: 768px) {
     height: 296px;
-    background-image: url("../img/intro.jpg");
-    background-size: cover;
-    background-position: 50% 0;
+    background-image:
+      url("../img/text.svg"),
+      url("../img/intro.jpg");
+    background-size: 457px, cover;
+    background-position: center, bottom;
   }
 }
 
 .page-header__intro--index {
   height: 389px;
-  background-image: url("../img/intro-index-small.jpg");
+  background-image:
+    url("../img/text-index.svg"),
+    url("../img/intro-index-small.jpg");
+  background-size: 282px, cover;
+  background-position: center;
 
   @media (min-width: 768px) {
     height: 518px;
-    background-image: url("../img/intro-index.jpg");
-    background-size: cover;
+    background-image:
+      url("../img/text-index.svg"),
+      url("../img/intro-index.jpg");
+    background-size: 461px, cover;
   }
 }
