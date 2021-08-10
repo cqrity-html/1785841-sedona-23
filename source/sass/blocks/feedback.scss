@@ -4,7 +4,6 @@
   background-color: var(--white);
 }
 
-
 .feedback__header {
   padding: 30px 15px;
 
@@ -57,6 +56,7 @@
   width: 320px;
   height: 1px;
   bottom: -10px;
+  left: -20px;
   background-image: url("../img/separator.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -79,9 +79,32 @@
   }
 }
 
+.feedback__fieldset--name::before {
+  @media (min-width: 768px) {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 320px;
+    left: -40px;
+    top: -85px;
+    background-image: url("../img/vertical-separator.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  @media (min-width: 768px) {
+    left: -80px;
+  }
+}
+
 .feedback__fieldset--name legend {
-  text-align: left;
-  margin-bottom: 25px;
+  padding-left: 50px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    text-align: left;
+    margin-bottom: 64px;
+  }
 }
 
 .feedback__fieldset--contacts {
@@ -100,6 +123,36 @@
     padding-left: 0;
     padding-right: 0;
     width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
+
+.feedback__fieldset--contacts legend {
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 340px;
+    padding-right: 300px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+.feedback__fieldset--contacts legend::before {
+  @media (min-width: 1200px) {
+    content: "";
+    position: absolute;
+    width: 960px;
+    height: 1px;
+    left: 0;
+    top: -55px;
+    background-image: url("../img/long-separator.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }
 
@@ -114,10 +167,17 @@
 
 .feedback__fieldset--sights {
   grid-column: span 2;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 20px;
 
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
   }
 
   @media (min-width: 1200px) {
@@ -129,17 +189,35 @@
     padding-right: 0;
     width: 100%;
     margin-bottom: 40px;
+    flex-wrap: nowrap;
   }
 }
 
 .feedback__fieldset--sights legend {
-  padding-left: 150px;
-  padding-right: 150px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding: 0 30% 0 10%;
+  }
 
   @media (min-width: 1200px) {
     padding-left: 300px;
     padding-right: 300px;
+  }
+}
+
+.feedback__fieldset--sights legend::before {
+  @media (min-width: 1200px) {
+    content: "";
+    position: absolute;
+    width: 960px;
+    height: 1px;
+    left: 0;
+    top: 20px;
+    background-image: url("../img/long-separator.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
   }
 }
 

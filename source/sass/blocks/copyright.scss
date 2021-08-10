@@ -1,0 +1,12 @@
+.copyright__icon {
+  fill: var(--black);
+
+  &:hover {
+    fill: var(--blue);
+  }
+
+  &:active {
+    fill: var(--black);
+    opacity: 0.3;
+  }
+}
