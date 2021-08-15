@@ -13,9 +13,7 @@
   background-color: var(--blue);
   width: 47px;
   height: 47px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  cursor: pointer;
 
   &:hover {
     background-color: var(--dark-blue);
@@ -28,6 +26,11 @@
 
 .social__link {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 47px;
+  width: 47px;
 }
 
 .social__link svg {

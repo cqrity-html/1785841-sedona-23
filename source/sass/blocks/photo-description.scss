@@ -37,29 +37,37 @@
   }
 }
 
-.photo-description__likes {
-  font-weight: bold;
-  position: relative;
+.photo-description__likes-button {
+  border: none;
+  background: none;
   padding-left: 40px;
+  font-weight: bold;
 
   @media (min-width: 768px) {
-    margin-bottom: 0;
     position: absolute;
     right: 20px;
-    bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    color: var(--white);
   }
 }
 
-.photo-description__likes::before {
+.photo-description__likes-button::before {
   content: "";
   position: absolute;
   width: 23px;
   height: 21px;
-  left: 0;
+  left: 20px;
   bottom: 3px;
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    left: 7px;
+  }
 
   @media (min-width: 1200px) {
     background-image: url("../img/icon-like-white.svg");

@@ -6,57 +6,70 @@
 
 .page-header__logo {
   position: absolute;
-  width: 102px;
-  height: 84px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("../img/logo-small.svg");
   background-position: center;
 
-  @media (min-width: 768px) {
-    background-image: url("../img/logo-tablet.svg");
-  }
-
   @media (min-width: 1200px) {
-    height: 96px;
     width: 187px;
-    background-image: url("../img/logo.svg");
+    height: 96px;
   }
 }
 
 .page-header__intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 158px;
-  background-image:
-    url("../img/text-small.svg"),
-    url("../img/intro-small.jpg");
+  background-image: url("../img/intro-small.jpg");
   background-repeat: no-repeat;
-  background-size: 261px, cover;
-  background-position: center, bottom;
+  background-size: cover;
+  background-position: bottom;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-small@2x.jpg");
+  }
 
   @media (min-width: 768px) {
     height: 296px;
-    background-image:
-      url("../img/text.svg"),
-      url("../img/intro.jpg");
-    background-size: 457px, cover;
-    background-position: center, bottom;
+    background-image: url("../img/intro.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro@2x.jpg");
+    }
   }
 }
 
 .page-header__intro--index {
   height: 389px;
-  background-image:
-    url("../img/text-index.svg"),
-    url("../img/intro-index-small.jpg");
-  background-size: 282px, cover;
-  background-position: center;
+  background-image: url("../img/intro-index-small.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/intro-index-small@2x.jpg");
+  }
 
   @media (min-width: 768px) {
     height: 518px;
-    background-image:
-      url("../img/text-index.svg"),
-      url("../img/intro-index.jpg");
-    background-size: 461px, cover;
+    background-image: url("../img/intro-index.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/intro-index@2x.jpg");
+    }
+  }
+}
+
+.page-header__intro-text {
+  @media (min-width: 768px) {
+    width: 457px;
+    height: 78px;
+  }
+}
+
+.page-header__intro-text--index {
+  @media (min-width: 768px) {
+    width: 461px;
+    height: 350px;
   }
 }
