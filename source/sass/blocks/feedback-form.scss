@@ -11,6 +11,12 @@
   }
 }
 
+.feedback-form__phone {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
 .feedback-form__field {
   background-color: var(--background);
   padding: 14px 22px;
