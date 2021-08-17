@@ -38,7 +38,7 @@ if (mainNav && mainNavToggle && mainNavClose) {
   });
 }
 
-//MAIN-NAV
+//MODAL
 
 if (modal && modalError && modalSuccess && modalButtonClose && modalButtonOk && feedbackButton && feedbackForm && feedbackName && feedbackPhone && feedbackEmail && feedbackFamilyName) {
 
