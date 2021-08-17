@@ -8,6 +8,7 @@
 
   @media (min-width: 1200px) {
     padding: 0 100px;
+    column-gap: 100px;
   }
 }
 
@@ -138,7 +139,7 @@
 
 .feedback-form__checkbox:checked + label::before {
   background-image: url("../img/checkbox-checked.svg");
-  background-position: center center;
+  background-position: center;
 }
 
 .feedback-form__label--checkbox:hover::before {
@@ -151,7 +152,7 @@
 
 .feedback-form__checkbox:active:checked + label::before {
   background-image: url("../img/checkbox-checked-active.svg");
-  background-position: center center;
+  background-position: center;
 }
 
 .feedback-form__label--checkbox {
