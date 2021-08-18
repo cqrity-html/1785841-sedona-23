@@ -31,10 +31,12 @@
   &:hover {
     background-color: var(--gray);
     border: 4px solid var(--gray);
+    transition: 300ms ease-out;
   }
 
   &:active {
     background-color: var(--white);
+    transition: 300ms ease-out;
   }
 
   &:focus {
@@ -270,6 +272,7 @@
   padding-top: 15px;
   padding-bottom: 17px;
   min-width: 280px;
+  max-width: 580px;
 }
 
 .feedback-form__footer {

@@ -87,10 +87,12 @@
 
   &:hover {
     fill: var(--dark);
+    transition: 300ms ease-out;
   }
 
   &:active {
     opacity: 0.3;
+    transition: 300ms ease-out;
   }
 
   @media (min-width: 768px) {
@@ -99,11 +101,13 @@
     &:hover {
       fill: var(--white);
       opacity: 0.6;
+      transition: 300ms ease-out;
     }
 
     &:active {
       fill: var(--white);
       opacity: 0.3;
+      transition: 300ms ease-out;
     }
   }
 }

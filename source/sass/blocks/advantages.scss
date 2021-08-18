@@ -89,7 +89,7 @@
     grid-template-columns: 1fr 2fr;
     grid-column: span 3;
     width: 100%;
-    max-height: 256px;
+    min-height: 256px;
   }
 }
 
@@ -141,7 +141,6 @@
     text-align: center;
     gap: 20px;
     padding: 30px 43px;
-    max-height: 330px;
     box-sizing: border-box;
     min-height: 330px;
   }
