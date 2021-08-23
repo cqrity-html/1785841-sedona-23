@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -68,6 +70,7 @@
           <div class="gallery-photo__wrapper gallery-photo__wrapper--first">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/foreign-lands-desktop.webp 1x, img/foreign-lands-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/foreign-lands-tablet.webp 1x, img/foreign-lands-tablet@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/foreign-lands-desktop.jpg 1x, img/foreign-lands-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/foreign-lands-tablet.jpg 1x, img/foreign-lands-tablet@2x.jpg 2x">
               <img class="gallery-photo__image gallery-photo__image--first" src="img/foreign-lands.jpg" srcset="img/foreign-lands@2x.jpg 2x" width="280" height="280" alt="Фото дороги в лучах заката">
@@ -84,6 +87,8 @@
           <a class="gallery-photo__link">
             <div class="gallery-photo__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/local-plants-desktop.webp 1x, img/local-plants-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/local-plants-tablet.webp 1x, img/local-plants-tablet@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/local-plants-desktop.jpg 1x, img/local-plants-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/local-plants-tablet.jpg 1x, img/local-plants-tablet@2x.jpg 2x">
                 <img class="gallery-photo__image" src="img/local-plants.jpg" srcset="img/local-plants@2x.jpg 2x" width="280" height="280" alt="Фото кактуса">
@@ -100,6 +105,8 @@
           <a class="gallery-photo__link">
             <div class="gallery-photo__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-to-north-desktop.webp 1x, img/road-to-north-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/road-to-north-tablet.webp 1x, img/road-to-north-tablet@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/road-to-north-desktop.jpg 1x, img/road-to-north-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/road-to-north-tablet.jpg 1x, img/road-to-north-tablet@2x.jpg 2x">
                 <img class="gallery-photo__image" src="img/road-to-north.jpg" srcset="img/road-to-north@2x.jpg 2x" width="280" height="280" alt="Фото лесной дороги">
@@ -116,6 +123,8 @@
           <a class="gallery-photo__link">
             <div class="gallery-photo__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.webp 1x, img/devils-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/devils-bridge-tablet.webp 1x, img/devils-bridge-tablet@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
                 <img class="gallery-photo__image" src="img/devils-bridge.jpg" srcset="img/devils-bridge@2x.jpg 2x" width="280" height="280" alt="Фото горного моста">
@@ -134,7 +143,13 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div class="video__section">
-        <img class="video__video" src="img/video-presentation.jpg" width="320" height="201" alt="Кадр видеопрезентации с изображением горного моста">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-presentation-desktop.webp 1x, img/video-presentation-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-presentation-tablet.webp 1x, img/video-presentation-tablet@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/video-presentation-desktop.jpg 1x, img/video-presentation-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-presentation-tablet.jpg 1x, img/video-presentation-tablet@2x.jpg 2x">
+          <img class="video__video" src="img/video-presentation.jpg" srcset="img/video-presentation@2x.jpg 2x" width="320" height="201" alt="Кадр видеопрезентации с изображением горного моста">
+        </picture>
         <div class="video__controls video-controls">
           <div class="video-controls__progress-line">
             <button class="video-controls__volume-button" aria-label="Ползунок громкости">

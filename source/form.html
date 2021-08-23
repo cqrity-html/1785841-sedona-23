@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -96,11 +98,11 @@
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--impression">
           <legend class="feedback-form__title feedback-form__title--impression">Ваше Общее впечатление:</legend>
-          <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Скорее положительное" id="positive" aria-label="Скорее положительное" checked>
+          <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Скорее положительное" id="positive" aria-label="Скорее положительное" checked tabindex="1">
             <label class="feedback-form__label feedback-form__label--radio" for="positive">Скорее положительное</label>
-          <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Скорее отрицательное" id="negative" aria-label="Скорее отрицательное">
+          <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Скорее отрицательное" id="negative" aria-label="Скорее отрицательное" tabindex="2">
             <label class="feedback-form__label feedback-form__label--radio" for="negative">Скорее отрицательное</label>
-          <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Затрудняюсь ответить" id="neutral" aria-label="Затрудняюсь ответить">
+          <input class="feedback-form__radio" type="radio" name="feedback-form-radio" value="Затрудняюсь ответить" id="neutral" aria-label="Затрудняюсь ответить" tabindex="3">
             <label class="feedback-form__label feedback-form__label--radio" for="neutral">Затрудняюсь ответить</label>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--sights">

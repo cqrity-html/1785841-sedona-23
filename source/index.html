@@ -9,6 +9,8 @@
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -70,7 +72,12 @@
             <p class="advantages__number">- №1 -</p>
             <p class="advantages__description advantages__description--with-image">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
-          <img class="advantages__image" src="img/advantage-image-first.jpg" srcset="img/advantage-image-first@2x.jpg 2x" width="800" height="256" alt="Фото города">
+          <div class="advanteges__photo--wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/advantage-image-first.webp 1x, img/advantage-image-first@2x.webp 2x">
+              <img class="advantages__image" src="img/advantage-image-first.jpg" srcset="img/advantage-image-first@2x.jpg 2x" width="800" height="260" alt="Фото города">
+            </picture>
+          </div>
         </li>
         <li class="advantages__item advantages__item--house advantages__item--with-icon">
           <img class="advantages__icon" src="img/icon-house.svg" width="39" height="37" alt="">
@@ -93,7 +100,12 @@
             <p class="advantages__number">- №2 -</p>
             <p class="advantages__description advantages__description--with-image">Да, по нему можно пройти! Если вы осмелитесь конечно</p>
           </div>
-          <img class="advantages__image" src="img/advantage-image-second.jpg" srcset="img/advantage-image-second@2x.jpg 2x" width="800" height="256" alt="Фото горного моста">
+          <div class="advanteges__photo--wrapper">
+            <picture>
+              <source type="image/webp" srcset="img/advantage-image-second.webp 1x, img/advantage-image-second@2x.webp 2x">
+              <img class="advantages__image" src="img/advantage-image-second.jpg" srcset="img/advantage-image-second@2x.jpg 2x" width="800" height="260" alt="Фото горного моста">
+            </picture>
+          </div>
         </li>
         <li class="advantages__item advantages__item--background">
           <h3 class="advantages__title">Небольшая площадь</h3>

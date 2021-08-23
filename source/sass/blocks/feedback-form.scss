@@ -89,6 +89,7 @@
   text-transform: none;
   padding: 15px 0 15px 65px;
   position: relative;
+  max-width: 190px;
 }
 
 .feedback-form__label--radio::before {
@@ -192,6 +193,7 @@
 
 .feedback-form__label--checkbox {
   margin-left: 15px;
+  padding-right: 0;
 
   @media (min-width: 768px) {
     margin: 0;

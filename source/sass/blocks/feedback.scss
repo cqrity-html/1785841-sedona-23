@@ -56,7 +56,7 @@
 .feedback__fieldset::after {
   content: "";
   position: absolute;
-  width: 768px;
+  width: 320px;
   height: 1px;
   bottom: -10px;
   left: -20px;
@@ -72,7 +72,7 @@
 .feedback__fieldset:first-child::before {
   content: "";
   position: absolute;
-  width: 768px;
+  width: 320px;
   height: 1px;
   top: -80px;
   left: -20px;
