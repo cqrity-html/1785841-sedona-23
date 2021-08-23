@@ -8,6 +8,7 @@
 
   @media (min-width: 1200px) {
     padding: 0 100px;
+    column-gap: 100px;
   }
 }
 
@@ -30,10 +31,12 @@
   &:hover {
     background-color: var(--gray);
     border: 4px solid var(--gray);
+    transition: 300ms ease-out;
   }
 
   &:active {
     background-color: var(--white);
+    transition: 300ms ease-out;
   }
 
   &:focus {
@@ -138,7 +141,7 @@
 
 .feedback-form__checkbox:checked + label::before {
   background-image: url("../img/checkbox-checked.svg");
-  background-position: center center;
+  background-position: center;
 }
 
 .feedback-form__label--checkbox:hover::before {
@@ -151,7 +154,7 @@
 
 .feedback-form__checkbox:active:checked + label::before {
   background-image: url("../img/checkbox-checked-active.svg");
-  background-position: center center;
+  background-position: center;
 }
 
 .feedback-form__label--checkbox {
@@ -269,6 +272,7 @@
   padding-top: 15px;
   padding-bottom: 17px;
   min-width: 280px;
+  max-width: 580px;
 }
 
 .feedback-form__footer {

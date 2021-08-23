@@ -13,8 +13,12 @@
   top: 0;
   left: 0;
   right: 0;
-  margin: auto;
+  margin: auto 0;
   box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    margin: auto;
+  }
 }
 
 .modal--success {
@@ -50,7 +54,7 @@
   @include button;
   padding: 17px 0;
   width: 80%;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
 }

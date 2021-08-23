@@ -99,11 +99,13 @@
 
   &:hover {
     background-color: var(--dark-blue);
+    transition: 300ms ease-out;
   }
 
   &:active {
     background-color: var(--darkest-blue);
     color: var(--white-transparent);
+    transition: 300ms ease-out;
   }
 
   @media (min-width: 768px) {
@@ -114,23 +116,25 @@
 
     &:hover {
       background-color: var(--white);
+      transition: 300ms ease-out;
     }
 
     &:active {
       background-color: var(--white);
+      transition: 300ms ease-out;
     }
   }
 }
 
 .main-nav__item:nth-child(3) {
   @media (min-width: 768px) {
-    margin-right: 40px;
+    margin-right: 100px;
   }
 }
 
 .main-nav__item:nth-child(4) {
   @media (min-width: 768px) {
-    margin-left: 40px;
+    margin-left: 100px;
   }
 }
 
@@ -148,10 +152,12 @@
 
     &:hover {
       color: var(--blue);
+      transition: 300ms ease-out;
     }
 
     &:active {
       color: var(--gray-shadow);
+      transition: 300ms ease-out;
     }
   }
 }

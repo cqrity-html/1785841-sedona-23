@@ -1,14 +1,17 @@
 .feedback {
-  padding-left: 20px;
-  padding-right: 20px;
   background-color: var(--white);
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .feedback__header {
-  padding: 30px 15px;
+  padding: 30px 7px;
 
   @media (min-width: 1200px) {
-    padding: 60px 15px;
+    padding: 100px 15px 30px 15px;
   }
 }
 
@@ -30,11 +33,11 @@
 
   @media (min-width: 768px) {
     line-height: 24px;
-    margin: 0 130px;
+    margin: 0 135px;
   }
 
   @media (min-width: 1200px) {
-    margin: 0 345px;
+    margin: 0 365px;
   }
 }
 
@@ -89,6 +92,7 @@
   @media (min-width: 768px) {
     order: -2;
     align-items: flex-start;
+    justify-content: flex-start;
     padding-left: 0;
     padding-right: 0;
     gap: 20px;
@@ -152,7 +156,7 @@
   @media (min-width: 768px) {
     content: "";
     position: absolute;
-    width: 623px;
+    width: 666px;
     height: 1px;
     background: linear-gradient(to right, var(--gray) 20%, var(--transparent) 20%, var(--transparent) 80%, var(--gray) 80%);
     background-repeat: no-repeat;
@@ -160,7 +164,7 @@
   }
 
   @media (min-width: 1200px) {
-    width: 920px;
+    width: 1000px;
     height: 1px;
     left: 0;
     background: linear-gradient(to right, var(--gray) 27%, var(--transparent) 27%, var(--transparent) 73%, var(--gray) 73%);
@@ -201,13 +205,14 @@
     align-items: center;
     justify-content: center;
     padding-left: 50px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: 1200px) {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding-left: 0;
     padding-right: 0;
     width: 100%;
@@ -221,7 +226,7 @@
   position: relative;
 
   @media (min-width: 768px) {
-    padding: 0 30% 0 10%;
+    padding: 0 30% 0 15%;
   }
 
   @media (min-width: 1200px) {
@@ -235,7 +240,7 @@
   @media (min-width: 768px) {
     content: "";
     position: absolute;
-    width: 623px;
+    width: 666px;
     height: 1px;
     left: -50px;
     top: 20px;
@@ -245,7 +250,7 @@
   }
 
   @media (min-width: 1200px) {
-    width: 920px;
+    width: 1000px;
     height: 1px;
     left: 0;
     background: linear-gradient(to right, var(--gray) 27%, var(--transparent) 27%, var(--transparent) 73%, var(--gray) 73%);
@@ -258,4 +263,30 @@
   align-items: center;
   justify-content: center;
   grid-column: span 2;
+  position: relative;
+
+  @media (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+
+.feedback__message h3::before {
+  @media (min-width: 768px) {
+    content: "";
+    position: absolute;
+    width: 666px;
+    height: 1px;
+    left: 0;
+    top: 10px;
+    background: linear-gradient(to right, var(--gray) 20%, var(--transparent) 20%, var(--transparent) 80%, var(--gray) 80%);
+    background-repeat: no-repeat;
+    background-position: center 0;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1000px;
+    height: 1px;
+    left: 0;
+    background: linear-gradient(to right, var(--gray) 27%, var(--transparent) 27%, var(--transparent) 73%, var(--gray) 73%);
+  }
 }

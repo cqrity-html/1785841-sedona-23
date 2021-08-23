@@ -3,10 +3,12 @@
 
   &:hover {
     fill: var(--blue);
+    transition: 300ms ease-out;
   }
 
   &:active {
     fill: var(--black);
     opacity: 0.3;
+    transition: 300ms ease-out;
   }
 }

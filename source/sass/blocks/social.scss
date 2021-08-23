@@ -17,10 +17,12 @@
 
   &:hover {
     background-color: var(--dark-blue);
+    transition: 300ms ease-out;
   }
 
   &:active {
     background-color: var(--darkest-blue);
+    transition: 300ms ease-out;
   }
 }
 
