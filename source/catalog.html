@@ -8,9 +8,10 @@
   <link rel="icon" href="../favicon.ico">
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
-  <link rel="manifest" href="../manifest.webmanifest">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -26,8 +27,8 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <!-- <ul class="main-nav__list main-nav--opened"> -->
-      <ul class="main-nav__list visually-hidden">
+      <!-- <ul class="main-nav__list main-nav--opened-nojs"> -->
+      <ul class="main-nav__list">
         <li class="main-nav__close">
           <button class="main-nav__close-button" type="button">
             <span class="visually-hidden">Закрыть меню</span>
@@ -69,6 +70,7 @@
           <div class="gallery-photo__wrapper gallery-photo__wrapper--first">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/foreign-lands-desktop.webp 1x, img/foreign-lands-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/foreign-lands-tablet.webp 1x, img/foreign-lands-tablet@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/foreign-lands-desktop.jpg 1x, img/foreign-lands-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/foreign-lands-tablet.jpg 1x, img/foreign-lands-tablet@2x.jpg 2x">
               <img class="gallery-photo__image gallery-photo__image--first" src="img/foreign-lands.jpg" srcset="img/foreign-lands@2x.jpg 2x" width="280" height="280" alt="Фото дороги в лучах заката">
@@ -78,13 +80,15 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Неродные просторы</p>
             <p class="photo-description__author">Автор фото: Борис</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">1350</button>
+            <a class="photo-description__likes-button" href="#" aria-label="Поставить лайк">1350</a>
           </div>
         </li>
         <li class="gallery__item gallery-photo">
           <a class="gallery-photo__link">
             <div class="gallery-photo__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/local-plants-desktop.webp 1x, img/local-plants-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/local-plants-tablet.webp 1x, img/local-plants-tablet@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/local-plants-desktop.jpg 1x, img/local-plants-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/local-plants-tablet.jpg 1x, img/local-plants-tablet@2x.jpg 2x">
                 <img class="gallery-photo__image" src="img/local-plants.jpg" srcset="img/local-plants@2x.jpg 2x" width="280" height="280" alt="Фото кактуса">
@@ -94,13 +98,15 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Местная растительность</p>
             <p class="photo-description__author">Автор фото: Сергей</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">143</button>
+            <a class="photo-description__likes-button" href="#" aria-label="Поставить лайк">143</a>
           </div>
         </li>
         <li class="gallery__item gallery-photo">
           <a class="gallery-photo__link">
             <div class="gallery-photo__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-to-north-desktop.webp 1x, img/road-to-north-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/road-to-north-tablet.webp 1x, img/road-to-north-tablet@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/road-to-north-desktop.jpg 1x, img/road-to-north-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/road-to-north-tablet.jpg 1x, img/road-to-north-tablet@2x.jpg 2x">
                 <img class="gallery-photo__image" src="img/road-to-north.jpg" srcset="img/road-to-north@2x.jpg 2x" width="280" height="280" alt="Фото лесной дороги">
@@ -110,13 +116,15 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Дорога на север</p>
             <p class="photo-description__author">Автор фото: Пётр</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">96</button>
+            <a class="photo-description__likes-button" href="#" aria-label="Поставить лайк">96</a>
           </div>
         </li>
         <li class="gallery__item gallery-photo">
           <a class="gallery-photo__link">
             <div class="gallery-photo__wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.webp 1x, img/devils-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/devils-bridge-tablet.webp 1x, img/devils-bridge-tablet@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
                 <img class="gallery-photo__image" src="img/devils-bridge.jpg" srcset="img/devils-bridge@2x.jpg 2x" width="280" height="280" alt="Фото горного моста">
@@ -126,7 +134,7 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Мост дьявола</p>
             <p class="photo-description__author">Автор фото: Антон</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">254</button>
+            <a class="photo-description__likes-button" href="#" aria-label="Поставить лайк">254</a>
           </div>
         </li>
       </ul>
@@ -135,7 +143,13 @@
       <h2 class="video__title">Все еще сомневаетесь?</h2>
       <p class="video__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
       <div class="video__section">
-        <img class="video__video" src="img/video-presentation.jpg" width="320" height="201" alt="Кадр видеопрезентации с изображением горного моста">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-presentation-desktop.webp 1x, img/video-presentation-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/video-presentation-tablet.webp 1x, img/video-presentation-tablet@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/video-presentation-desktop.jpg 1x, img/video-presentation-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-presentation-tablet.jpg 1x, img/video-presentation-tablet@2x.jpg 2x">
+          <img class="video__video" src="img/video-presentation.jpg" srcset="img/video-presentation@2x.jpg 2x" width="320" height="201" alt="Кадр видеопрезентации с изображением горного моста">
+        </picture>
         <div class="video__controls video-controls">
           <div class="video-controls__progress-line">
             <button class="video-controls__volume-button" aria-label="Ползунок громкости">
@@ -150,17 +164,17 @@
           <div class="video-controls__buttons">
             <button class="video-controls__button video-controls__button--replay" type="button" aria-label="Возпроизвести сначала">
               <svg class="video-controls__icon" width="16" height="20">
-                <use xlink:href="img/sprite.svg#icon-replay"></use>
+                <use xlink:href="img/sprite.svg#replay"></use>
               </svg>
             </button>
             <button class="video-controls__button" type="button" aria-label="Субтитры">
               <svg class="video-controls__icon" width="32" height="20">
-                <use xlink:href="img/sprite.svg#icon-subtitles"></use>
+                <use xlink:href="img/sprite.svg#subtitles"></use>
               </svg>
             </button>
             <button class="video-controls__button" type="button">
               <svg class="video-controls__icon" width="20" height="20" aria-label="Полноэкранный вид">
-                <use xlink:href="img/sprite.svg#icon-fullscreen"></use>
+                <use xlink:href="img/sprite.svg#fullscreen"></use>
               </svg>
             </button>
           </div>
@@ -185,7 +199,7 @@
         <li class="social__item">
           <h3 class="visually-hidden">Facebook</h3>
           <a class="social__link" href="https://www.facebook.com/htmlacademy" aria-label="Наш Facebook">
-            <svg width="9" height="19" viewBox="0 0 9 19" xmlns="http://www.w3.org/2000/svg">
+            <svg width="9" height="19">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
@@ -193,7 +207,7 @@
         <li class="social__item">
           <h3 class="visually-hidden">YouTube</h3>
           <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Наш YouTube">
-            <svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
@@ -203,13 +217,13 @@
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Academy">
-        <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
-          <use xlink:href="img/sprite.svg#icon-copyright"></use>
+        <svg class="copyright__icon" width="27" height="35">
+          <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

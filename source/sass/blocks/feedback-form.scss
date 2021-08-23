@@ -89,6 +89,7 @@
   text-transform: none;
   padding: 15px 0 15px 65px;
   position: relative;
+  max-width: 190px;
 }
 
 .feedback-form__label--radio::before {
@@ -102,6 +103,7 @@
   background-color: var(--beige);
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }
 
 .feedback-form__radio:checked + label::before {
@@ -137,33 +139,70 @@
   background-repeat: no-repeat;
   background-position: 0 0;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .feedback-form__checkbox:checked + label::before {
-  background-image: url("../img/checkbox-checked.svg");
-  background-position: center;
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  top: 0;
+  left: 0;
+  background-color: var(--beige);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 0;
+}
+
+.feedback-form__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  transform: rotate(-45deg);
+  height: 11px;
+  width: 20px;
+  left: 17px;
+  top: 17px;
+  border-radius: 2px;
+  border-bottom: 4px solid var(--black);
+  border-left: 4px solid var(--black);
 }
 
 .feedback-form__label--checkbox:hover::before {
   background-color: var(--gray);
 }
 
-.feedback-form__label--checkbox:active::before {
+.feedback-form__checkbox:active:checked + label::before {
   background-color: var(--darkest-gray);
 }
 
-.feedback-form__checkbox:active:checked + label::before {
-  background-image: url("../img/checkbox-checked-active.svg");
-  background-position: center;
+.feedback-form__checkbox:active:checked + label::after {
+  content: "";
+  position: absolute;
+  transform: rotate(-45deg);
+  height: 11px;
+  width: 20px;
+  left: 17px;
+  top: 17px;
+  border-radius: 2px;
+  border-bottom: 4px solid var(--gray-shadow);
+  border-left: 4px solid var(--gray-shadow);
 }
 
 .feedback-form__label--checkbox {
   margin-left: 15px;
+  padding-right: 0;
 
   @media (min-width: 768px) {
     margin: 0;
     max-width: 215px;
     padding-left: 80px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 15%;
   }
 }
 
@@ -177,6 +216,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
+    width: 480px;
   }
 }
 
@@ -243,6 +283,10 @@
   margin-bottom: 51px;
   padding: 20px;
   box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
 
   &:focus {
     outline: 0;
