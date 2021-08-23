@@ -7,6 +7,7 @@
   position: absolute;
   border: none;
   background: none;
+  outline: none;
   top: 17px;
   right: 17px;
 
@@ -57,26 +58,36 @@
   margin: 0;
   position: absolute;
   width: 100%;
-  min-height: 223px;
   z-index: 1;
+  display: none;
 
   @media (min-width: 768px) {
     display: flex;
     flex-direction: row;
     position: static;
     justify-content: space-between;
-    min-height: 56px;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    max-height: 556px;
   }
 }
 
+.main-nav__list--appear {
+  animation-name: slide;
+  animation-duration: 0.5s;
+}
+
 .main-nav--opened {
+  display: block;
+}
+
+.main-nav--opened-nojs {
   position: static;
   display: block;
   margin-top: 84px;
 }
 
-.main-nav--opened .main-nav__close {
+.main-nav--opened-nojs .main-nav__close {
   display: none;
 }
 
@@ -96,6 +107,7 @@
   box-shadow:
     inset 0 -1px 0 0 var(--dark-shadow),
     inset 0 1px 0 0 var(--light-shadow);
+  box-sizing: border-box;
 
   &:hover {
     background-color: var(--dark-blue);
@@ -113,6 +125,7 @@
     box-shadow: none;
     margin: 0;
     width: 25%;
+    height: 56px;
 
     &:hover {
       background-color: var(--white);
@@ -128,13 +141,67 @@
 
 .main-nav__item:nth-child(3) {
   @media (min-width: 768px) {
-    margin-right: 100px;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+
+  @media (min-width: 1000px) {
+    padding-left: 34px;
   }
 }
 
 .main-nav__item:nth-child(4) {
   @media (min-width: 768px) {
-    margin-left: 100px;
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+
+  @media (min-width: 1000px) {
+    padding-right: 34px;
+  }
+}
+
+.main-nav__item:nth-child(7) {
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  @media (min-width: 1000px) {
+    padding-left: 34px;
+  }
+}
+
+.main-nav__item:nth-child(8) {
+  @media (min-width: 768px) {
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+
+  @media (min-width: 1000px) {
+    padding-right: 34px;
+  }
+}
+
+.main-nav__item:nth-child(11) {
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  @media (min-width: 1000px) {
+    padding-left: 34px;
+  }
+}
+
+.main-nav__item:nth-child(12) {
+  @media (min-width: 768px) {
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+
+  @media (min-width: 1000px) {
+    padding-right: 34px;
   }
 }
 

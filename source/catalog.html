@@ -8,7 +8,7 @@
   <link rel="icon" href="../favicon.ico">
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
-  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -25,8 +25,8 @@
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <!-- <ul class="main-nav__list main-nav--opened"> -->
-      <ul class="main-nav__list visually-hidden">
+      <!-- <ul class="main-nav__list main-nav--opened-nojs"> -->
+      <ul class="main-nav__list">
         <li class="main-nav__close">
           <button class="main-nav__close-button" type="button">
             <span class="visually-hidden">Закрыть меню</span>
@@ -77,7 +77,7 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Неродные просторы</p>
             <p class="photo-description__author">Автор фото: Борис</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">1350</button>
+            <a class="photo-description__likes-button" href="#" aria-label="Поставить лайк">1350</a>
           </div>
         </li>
         <li class="gallery__item gallery-photo">
@@ -93,7 +93,7 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Местная растительность</p>
             <p class="photo-description__author">Автор фото: Сергей</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">143</button>
+            <a class="photo-description__likes-button" href="#" aria-label="Поставить лайк">143</a>
           </div>
         </li>
         <li class="gallery__item gallery-photo">
@@ -109,7 +109,7 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Дорога на север</p>
             <p class="photo-description__author">Автор фото: Пётр</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">96</button>
+            <a class="photo-description__likes-button" href="#" aria-label="Поставить лайк">96</a>
           </div>
         </li>
         <li class="gallery__item gallery-photo">
@@ -125,7 +125,7 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Мост дьявола</p>
             <p class="photo-description__author">Автор фото: Антон</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">254</button>
+            <a class="photo-description__likes-button" href="#" aria-label="Поставить лайк">254</a>
           </div>
         </li>
       </ul>
@@ -184,7 +184,7 @@
         <li class="social__item">
           <h3 class="visually-hidden">Facebook</h3>
           <a class="social__link" href="https://www.facebook.com/htmlacademy" aria-label="Наш Facebook">
-            <svg width="9" height="19" viewBox="0 0 9 19" xmlns="http://www.w3.org/2000/svg">
+            <svg width="9" height="19">
               <use xlink:href="img/sprite.svg#icon-facebook"></use>
             </svg>
           </a>
@@ -192,7 +192,7 @@
         <li class="social__item">
           <h3 class="visually-hidden">YouTube</h3>
           <a class="social__link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Наш YouTube">
-            <svg width="20" height="14" viewBox="0 0 20 14" xmlns="http://www.w3.org/2000/svg">
+            <svg width="20" height="14">
               <use xlink:href="img/sprite.svg#icon-youtube"></use>
             </svg>
           </a>
@@ -202,7 +202,7 @@
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" aria-label="Сайт HTML Academy">
-        <svg class="copyright__icon" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+        <svg class="copyright__icon" width="27" height="35">
           <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>

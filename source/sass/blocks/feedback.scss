@@ -139,6 +139,7 @@
     width: 100%;
     text-align: center;
     margin-bottom: 0;
+    flex-wrap: wrap;
   }
 }
 
@@ -211,13 +212,13 @@
   @media (min-width: 1200px) {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
     width: 100%;
     margin-bottom: 40px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 }
 
