@@ -205,8 +205,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding-left: 50px;
     margin-bottom: 70px;
+    box-sizing: border-box;
   }
 
   @media (min-width: 1200px) {
@@ -227,7 +227,10 @@
   position: relative;
 
   @media (min-width: 768px) {
-    padding: 0 30% 0 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30%;
   }
 
   @media (min-width: 1200px) {
@@ -243,7 +246,7 @@
     position: absolute;
     width: 666px;
     height: 1px;
-    left: -50px;
+    left: 0;
     top: 20px;
     background: linear-gradient(to right, var(--gray) 20%, var(--transparent) 20%, var(--transparent) 80%, var(--gray) 80%);
     background-repeat: no-repeat;

@@ -90,13 +90,14 @@
   padding: 15px 0 15px 65px;
   position: relative;
   max-width: 190px;
+  cursor: pointer;
 }
 
 .feedback-form__label--radio::before {
   content: "";
   position: absolute;
-  width: 55px;
-  height: 55px;
+  width: 56px;
+  height: 56px;
   border-radius: 50%;
   top: 0;
   left: 0;
@@ -110,7 +111,7 @@
   background-color: var(--dark);
   width: 20px;
   height: 20px;
-  border: 19px solid var(--beige);
+  border: 18px solid var(--beige);
 }
 
 .feedback-form__label--radio:hover::before {
@@ -125,7 +126,7 @@
   background-color: var(--gray-shadow);
   width: 20px;
   height: 20px;
-  border: 19px solid var(--darkest-gray);
+  border: 18px solid var(--darkest-gray);
 }
 
 .feedback-form__label--checkbox::before {
