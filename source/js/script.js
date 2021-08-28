@@ -1,7 +1,3 @@
-let mainNav = document.querySelector('.main-nav__list');
-let mainNavToggle = document.querySelector('.main-nav__toggle');
-let mainNavClose = document.querySelector('.main-nav__close-button');
-
 let modal = document.querySelector('.modal');
 let modalError = document.querySelector('.modal--error');
 let modalSuccess = document.querySelector('.modal--success');
@@ -14,34 +10,6 @@ let feedbackName = document.querySelector('.feedback-form__label--first-name');
 let feedbackFamilyName = document.querySelector('.feedback-form__label--family-name');
 let feedbackPhone = document.querySelector('.feedback-form__field--phone');
 let feedbackEmail = document.querySelector('.feedback-form__field--email');
-
-//MAIN-NAV
-
-if (mainNav && mainNavToggle && mainNavClose) {
-
-  mainNavToggle.addEventListener('click', function (event) {
-    event.preventDefault();
-    mainNav.classList.add('main-nav--opened');
-    mainNav.classList.add('main-nav__list--appear');
-  });
-
-  mainNavClose.addEventListener('click', function () {
-    mainNav.classList.remove('main-nav--opened');
-    mainNav.classList.remove('main-nav__list--appear');
-  });
-
-  window.addEventListener('keydown', function (evt) {
-    if (evt.key === 'Esc' || evt.key === 'Escape') {
-      if (!mainNav.classList.contains('visually-hidden')) {
-        evt.preventDefault();
-        mainNav.classList.remove('main-nav--opened');
-        mainNav.classList.remove('main-nav__list--appear');
-      }
-    }
-  });
-}
-
-//MODAL
 
 if (modal && modalError && modalSuccess && modalButtonClose && modalButtonOk && feedbackButton && feedbackForm && feedbackName && feedbackPhone && feedbackEmail && feedbackFamilyName) {
 

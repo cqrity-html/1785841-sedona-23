@@ -9,6 +9,11 @@
   left: 50%;
   transform: translateX(-50%);
   background-position: center;
+  z-index: 3;
+
+  @media (min-width: 768px) {
+    top: -56px;
+  }
 
   @media (min-width: 1200px) {
     width: 187px;
@@ -26,18 +31,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
+  position: relative;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-small@2x.jpg");
   }
 
   @media (min-width: 768px) {
-    height: 296px;
+    height: 290px;
     background-image: url("../img/intro.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro@2x.jpg");
     }
+  }
+
+  @media (min-width: 1200px) {
+    height: 301px;
   }
 }
 
@@ -69,8 +79,14 @@
 }
 
 .page-header__intro-text--index {
+  top: 30px;
+
   @media (min-width: 768px) {
     width: 461px;
     height: 350px;
   }
+}
+
+.page-header__link--index {
+  cursor: default;
 }

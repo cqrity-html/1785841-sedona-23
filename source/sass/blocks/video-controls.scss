@@ -4,18 +4,18 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 38px;
+  bottom: -63px;
   left: 1%;
   width: 100%;
 
   @media (min-width: 768px) {
-    bottom: 24px;
+    bottom: 3px;
     left: 0;
   }
 }
 
 .video-controls__progress-line {
-  width: 85%;
+  width: 88%;
   height: 45px;
   background-color: var(--black-transparent);
   display: flex;
@@ -33,10 +33,11 @@
   @media (min-width: 1200px) {
     height: 93px;
     width: 800px;
+    margin-left: 25px;
   }
 }
 
-.volume-controls__volume-bar {
+.video-controls__volume-bar {
   cursor: pointer;
 
   @media (min-width: 768px) {
@@ -48,6 +49,37 @@
   }
 }
 
+.video-controls__volume-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+
+  @media (min-width: 768px) {
+    z-index: 2;
+  }
+}
+
+.video-controls__volume-switch {
+  cursor: pointer;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  top: -3px;
+  left: 38px;
+  border-radius: 50%;
+  background-color: var(--white);
+
+  @media (min-width: 768px) {
+    top: -5px;
+    left: 120px;
+  }
+
+  @media (min-width: 1200px) {
+    top: -2px;
+  }
+}
+
 .video-controls__buttons {
   box-sizing: border-box;
   width: 85%;
@@ -56,19 +88,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 25px;
-  gap: 31px;
+  padding: 0 14px;
+  gap: 21px;
   position: relative;
 
   @media (min-width: 768px) {
     width: 648px;
     position: absolute;
     background: none;
-    padding: 0 40px;
+    padding: 0 30px;
   }
 
   @media (min-width: 1200px) {
     width: 800px;
+    margin-left: 23px;
   }
 }
 
@@ -109,37 +142,5 @@
       opacity: 0.3;
       transition: 300ms ease-out;
     }
-  }
-}
-
-.video-controls__volume-button {
-  border: none;
-  background: none;
-  cursor: pointer;
-  position: relative;
-
-  @media (min-width: 768px) {
-    z-index: 2;
-  }
-}
-
-.video-controls__volume-switch {
-  cursor: pointer;
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  top: -4px;
-  left: 43px;
-  border-radius: 50%;
-  background-color: var(--white);
-
-  @media (min-width: 768px) {
-    top: -5px;
-    left: 120px;
-  }
-
-  @media (min-width: 768px) {
-    top: -5px;
-    left: 120px;
   }
 }

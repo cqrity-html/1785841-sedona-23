@@ -1,7 +1,8 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  padding: 35px 20px;
+  align-items: center;
+  padding: 37px 20px;
   gap: 33px;
   background-color: var(--white);
 
@@ -9,9 +10,11 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 100px;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 33px 60px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 36px 120px;
   }
 }
 
@@ -20,11 +23,12 @@
   line-height: 26px;
   font-weight: bold;
   color: var(--black);
+  text-transform: uppercase;
 }
 
 .page-footer__copyright {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
+  gap: 5px;
 }

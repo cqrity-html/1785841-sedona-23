@@ -6,13 +6,14 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 3px;
+  gap: 6px;
+  max-width: 250px;
 }
 
 .social__item {
   background-color: var(--blue);
   width: 47px;
-  height: 47px;
+  height: 48px;
   cursor: pointer;
 
   &:hover {
