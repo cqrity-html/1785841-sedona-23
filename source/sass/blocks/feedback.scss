@@ -34,7 +34,7 @@
 .feedback__intro {
   font-size: 14px;
   line-height: 26px;
-  margin: 25px 0;
+  margin: 24px 0;
 
   @media (min-width: 768px) {
     line-height: 24px;
@@ -63,7 +63,7 @@
   position: absolute;
   width: 320px;
   height: 1px;
-  bottom: -15px;
+  bottom: -14px;
   left: -20px;
   background-color: var(--gray);
   background-repeat: no-repeat;
@@ -92,7 +92,7 @@
 
 .feedback__fieldset--name {
   position: relative;
-  padding: 3px 0 20px 0;
+  padding: 3px 0 23px 0;
   gap: 25px;
   margin-bottom: 25px;
 
@@ -147,21 +147,24 @@
 }
 
 .feedback__fieldset--impression legend {
+  margin-bottom: 14px;
+
   @media (min-width: 768px) {
     padding: 0;
     margin: 0;
-    margin-bottom: 60px;
+    margin-bottom: 61px;
   }
 
   @media (min-width: 1200px) {
-    margin: 0 auto 60px auto;
+    margin: 0 auto 62px auto;
+    padding-left: 5px;
   }
 }
 
 .feedback__fieldset--name legend {
   @media (min-width: 768px) {
     padding: 0;
-    margin-bottom: 54px;
+    margin-bottom: 57px;
     margin-left: 0;
   }
 }
@@ -174,6 +177,7 @@
 
   @media (min-width: 768px) {
     order: -1;
+    padding: 0 10px;
   }
 
   @media (min-width: 1200px) {
@@ -195,13 +199,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 16px;
 
   @media (min-width: 768px) {
-    padding-top: 30px;
+    padding-top: 27px;
   }
 
   @media (min-width: 1200px) {
     margin-bottom: 60px;
+    padding-top: 25px;
   }
 }
 
@@ -211,6 +217,7 @@
     position: absolute;
     width: 666px;
     height: 1px;
+    top: 36px;
     background: linear-gradient(to right, var(--gray) 20%, var(--transparent) 20%, var(--transparent) 80%, var(--gray) 80%);
     background-repeat: no-repeat;
     background-position: center 0;
@@ -220,7 +227,7 @@
     width: 1000px;
     height: 1px;
     left: 0;
-    top: 38px;
+    top: 34px;
     background: linear-gradient(to right, var(--gray) 27%, var(--transparent) 27%, var(--transparent) 73%, var(--gray) 73%);
   }
 }
@@ -246,7 +253,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 25px;
+  gap: 24px;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -259,7 +266,7 @@
 
   @media (min-width: 1200px) {
     align-items: flex-start;
-    padding-left: 37px;
+    padding-left: 34px;
     padding-right: 0;
     width: 100%;
     margin-bottom: 40px;
@@ -271,12 +278,13 @@
 .feedback__fieldset--sights legend {
   margin-bottom: 20px;
   position: relative;
+  padding-top: 4px;
 
   @media (min-width: 768px) {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 35px 30% 23px 30%;
+    padding: 38px 30% 24px 30%;
   }
 
   @media (min-width: 1200px) {

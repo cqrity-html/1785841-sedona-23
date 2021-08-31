@@ -2,113 +2,13 @@
   background-color: var(--white);
 }
 
-.main-nav__header {
-  height: 56px;
-  background-color: var(--white);
-  position: relative;
-
-  @media (min-width: 768px) {
-    height: 1px;
-  }
-}
-
-.main-nav__toggle,
-.main-nav__toggle--close {
-  position: absolute;
-  border: none;
-  background: none;
-  outline: none;
-  top: 17px;
-  right: 17px;
-  z-index: 3;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-.main-nav__toggle--nojs {
-  display: none;
-}
-
-.main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 0;
-  background-image: url("../img/icon-menu.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.main-nav__toggle:hover::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 0;
-  background-image: url("../img/icon-menu-hover.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.main-nav__toggle:active::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 0;
-  background-image: url("../img/icon-menu-active.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.main-nav__toggle--close::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 10px;
-  background-image: url("../img/icon-cross.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.main-nav__toggle--close:hover::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 10px;
-  background-image: url("../img/icon-cross-hover.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.main-nav__toggle--close:active::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 10px;
-  background-image: url("../img/icon-cross-active.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
 .main-nav__list {
   list-style: none;
   padding: 0;
   margin: 0;
   position: absolute;
   width: 100%;
+  margin-bottom: 56px;
 
   @media (min-width: 768px) {
     display: flex;
@@ -118,6 +18,7 @@
     box-sizing: border-box;
     flex-wrap: wrap;
     max-height: 556px;
+    margin-bottom: 0;
   }
 
   @media (min-width: 1200px) {
@@ -125,12 +26,12 @@
   }
 }
 
-.main-nav--opened-nojs,
-.main-nav--opened {
+.main-nav__list--nojs,
+.main-nav__list--opened {
   position: static;
 }
 
-.main-nav--closed {
+.main-nav__list--closed {
   display: none;
 
   @media (min-width: 768px) {

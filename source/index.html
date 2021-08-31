@@ -16,12 +16,12 @@
 
 <body class="page__body">
   <header class="page-header">
-    <button class="main-nav__menu-toggle main-nav__toggle visually-hidden" type="button" aria-label="Переключатель меню"></button>
-    <!-- <button class="main-nav__menu-toggle main-nav__toggle--close" type="button" aria-label="Переключатель меню"></button> -->
+    <button class="page-header__menu-toggle page-header__toggle visually-hidden" type="button" aria-label="Переключатель меню"></button>
+    <!-- <button class="page-header__menu-toggle page-header__toggle--close" type="button" aria-label="Переключатель меню"></button> -->
     <nav class="page-header__nav main-nav">
-      <ul class="main-nav__list main-nav--opened-nojs">
-      <!-- <ul class="main-nav__list main-nav--opened"> -->
-      <!-- <ul class="main-nav__list main-nav--closed"> -->
+      <ul class="main-nav__list main-nav__list--nojs">
+      <!-- <ul class="main-nav__list main-nav__list--opened"> -->
+      <!-- <ul class="main-nav__list main-nav__list--closed"> -->
         <li class="main-nav__item main-nav__item--index">
           <a class="main-nav__link main-nav__link--current">Главная</a>
         </li>
@@ -36,25 +36,23 @@
         </li>
       </ul>
     </nav>
-    <div class="main-nav__header">
-      <a class="page-header__link--index">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
-        </picture>
-      </a>
-    </div>
-    <section class="page-header__intro page-header__intro--index">
-      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+    <a class="page-header__link page-header__link--index">
       <picture>
-        <source media="(min-width: 768px)" srcset="img/text-index.svg">
-        <img class="page-header__intro-text page-header__intro-text--index" src="img/text-index-small.svg" width="282" height="214" alt="Курортный городок Седона»">
+        <source media="(min-width: 1200px)" srcset="img/logo.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
       </picture>
-    </section>
+    </a>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт курортного городка Седона</h1>
+    <section class="intro intro--index">
+      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/text-index.svg">
+        <img class="intro__text intro__text--index" src="img/text-index-small.svg" width="282" height="214" alt="Курортный городок Седона»">
+      </picture>
+    </section>
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества отдыха в Седоне</h2>
       <header class="advantages__header">
@@ -67,7 +65,7 @@
           <div class="advantages__text">
             <h3 class="advantages__title">Настоящий городок</h3>
             <p class="advantages__number">- №1 -</p>
-            <p class="advantages__description advantages__description--with-image">Седона не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="advantages__description advantages__description--with-image advantages__description--town">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
           <div class="advantages__photo-wrapper">
             <picture>
@@ -79,28 +77,28 @@
           </div>
         </li>
         <li class="advantages__item advantages__item--house advantages__item--with-icon">
-          <svg class="advantages__icon" width="39" height="37">
+          <svg class="advantages__icon advantages__icon--house" width="39" height="37">
             <use xlink:href="img/sprite.svg#icon-house"></use>
           </svg>
           <h3 class="advantages__title advantages__title-house">Жилье</h3>
           <p class="advantages__description advantages__description--with-icon advantages__description--house">Рекоммендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
         <li class="advantages__item advantages__item--gift advantages__item--with-icon">
-          <svg class="advantages__icon" width="32" height="38">
+          <svg class="advantages__icon advantages__icon--gift" width="32" height="38">
             <use xlink:href="img/sprite.svg#icon-gift"></use>
           </svg>
           <h3 class="advantages__title advantages__title-gift">Сувениры</h3>
           <p class="advantages__description advantages__description--with-icon advantages__description--gift">Не только китайского, но и местного производства!</p>
         </li>
         <li class="advantages__item advantages__item--burger advantages__item--with-icon">
-          <svg class="advantages__icon" width="40" height="35">
+          <svg class="advantages__icon advantages__icon--burger" width="40" height="35">
             <use xlink:href="img/sprite.svg#icon-burger"></use>
           </svg>
           <h3 class="advantages__title advantages__title-burger">Еда</h3>
           <p class="advantages__description advantages__description--with-icon advantages__description--burger advantages__description--with-icon-last">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li class="advantages__item advantages__item--with-image advantages__item--bridge">
-          <div class="advantages__text">
+          <div class="advantages__text advantages__text--devils-bridge">
             <h3 class="advantages__title">Там есть мост дьявола</h3>
             <p class="advantages__number">- №2 -</p>
             <p class="advantages__description advantages__description--with-image advantages__description--bridge">Да, по нему можно пройти! Если вы осмелитесь конечно</p>
@@ -117,17 +115,17 @@
         <li class="advantages__item advantages__item--background">
           <h3 class="advantages__title">Небольшая площадь</h3>
           <p class="advantages__number">- №3 -</p>
-          <p class="advantages__description">Все интересные места находятся очень близко</p>
+          <p class="advantages__description advantages__description--background">Все интересные места находятся очень близко</p>
         </li>
         <li class="advantages__item advantages__item--background">
           <h3 class="advantages__title">Красивая дорога</h3>
           <p class="advantages__number">- №4 -</p>
-          <p class="advantages__description advantages__description--road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <p class="advantages__description advantages__description--road advantages__description--background">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
         <li class="advantages__item advantages__item--background">
           <h3 class="advantages__title">Мало туристов</h3>
           <p class="advantages__number">- №5 -</p>
-          <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+          <p class="advantages__description advantages__description--background">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
       </ul>
     </section>
@@ -179,4 +177,5 @@
   </footer>
   <script src="js/script.min.js"></script>
 </body>
+
 </html>

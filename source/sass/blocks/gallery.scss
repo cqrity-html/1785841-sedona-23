@@ -8,7 +8,8 @@
 }
 
 .gallery__header {
-  padding: 15px 15px 0 15px;
+  padding: 14px 15px 0 15px;
+  box-sizing: border-box;
 
   @media (min-width: 768px) {
     padding: 42px 155px;
@@ -37,7 +38,6 @@
   line-height: 26px;
   margin-top: 24px;
 
-
   @media (min-width: 768px) {
     line-height: 24px;
     margin: 33px 10px;
@@ -45,7 +45,7 @@
 
   @media (min-width: 1200px) {
     line-height: 24px;
-    margin: 30px 230px;
+    margin: 32px 230px 30px 230px;
   }
 }
 

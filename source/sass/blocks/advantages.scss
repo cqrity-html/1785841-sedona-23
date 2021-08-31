@@ -3,10 +3,10 @@
 }
 
 .advantages__header {
-  padding: 20px 25px 0 26px;
+  padding: 18px 27px 0 26px;
 
   @media (min-width: 768px) {
-    padding: 30px 140px 34px 140px;
+    padding: 30px 140px 36px 140px;
   }
 
   @media (min-width: 1200px) {
@@ -43,7 +43,7 @@
 
 .advantages__title-house {
   margin-top: 11px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   @media (min-width: 768px) {
     margin: 0;
@@ -53,7 +53,7 @@
 
 .advantages__title-gift {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 
   @media (min-width: 768px) {
     margin: 0;
@@ -63,7 +63,7 @@
 
 .advantages__title-burger {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
 
   @media (min-width: 768px) {
     margin: 0;
@@ -76,6 +76,8 @@
 
   @media (min-width: 768px) {
     margin: 0;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
@@ -109,6 +111,13 @@
 .advantages__description--bridge {
   @media (min-width: 1200px) {
     padding: 0 60px;
+    margin-top: 4px;
+  }
+}
+
+.advantages__description--town {
+  @media (min-width: 768px) {
+    margin-top: 2px;
   }
 }
 
@@ -166,6 +175,12 @@
   }
 }
 
+.advantages__description--background {
+  @media (min-width: 768px) {
+    padding-top: 5px;
+  }
+}
+
 .advantages__list {
   list-style: none;
   padding: 0;
@@ -215,16 +230,30 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 18px;
     box-sizing: border-box;
     width: 100%;
-    padding: 30px;
+    padding: 31px 30px 34px 30px;
     grid-area: text;
   }
 
   @media (min-width: 1200px) {
     padding-top: 25px;
     padding-bottom: 36px;
+  }
+}
+
+.advantages__text--devils-bridge {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    box-sizing: border-box;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 34px;
   }
 }
 
@@ -246,7 +275,7 @@
     justify-content: center;
     text-align: center;
     gap: 20px;
-    padding: 30px 30px;
+    padding: 30px;
     box-sizing: border-box;
     min-height: 328px;
   }
@@ -269,10 +298,24 @@
   }
 }
 
+.advantages__icon--house {
+  top: 28px;
+}
+
+.advantages__icon--gift {
+  left: 25px;
+  top: 17px;
+}
+
+.advantages__icon--burger {
+  left: 18px;
+  top: 23px;
+}
+
 .advantages__item--background {
   background-color: var(--background);
   margin: 0;
-  padding: 26px 35px;
+  padding: 28px 35px 24px 35px;
   position: relative;
 
   @media (min-width: 768px) {
@@ -281,13 +324,14 @@
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-    gap: 20px;
+    gap: 16px;
     padding: 39px 40px;
     box-sizing: border-box;
   }
 
   @media (min-width: 1200px) {
     min-height: 256px;
+    padding-top: 41px;
   }
 }
 
@@ -322,14 +366,32 @@
 }
 
 .advantages__item--burger {
+  height: 144px;
+
   @media (min-width: 768px) {
     order: -1;
+    padding-top: 27px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 32px;
   }
 }
 
 .advantages__item--house {
   @media (min-width: 768px) {
     order: -2;
+    padding-top: 28px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 35px;
+  }
+}
+
+.advantages__item--gift {
+  @media (min-width: 1200px) {
+    padding-bottom: 26px;
   }
 }
 

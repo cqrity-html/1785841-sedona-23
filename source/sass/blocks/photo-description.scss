@@ -69,6 +69,26 @@
   }
 }
 
+.photo-description__likes-button--odd {
+  @media (min-width: 768px) {
+    right: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    right: 31px;
+  }
+}
+
+.photo-description__likes-button--even {
+  @media (min-width: 768px) {
+    right: 23px;
+  }
+
+  @media (min-width: 1200px) {
+    right: 24px;
+  }
+}
+
 .photo-description__likes-button--first {
   @media (min-width: 768px) {
     right: 15px;

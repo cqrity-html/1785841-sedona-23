@@ -16,12 +16,12 @@
 
 <body class="page__body">
   <header class="page-header">
-    <!-- <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button> -->
-    <!-- <button class="main-nav__toggle--close" type="button" aria-label="Закрыть меню"></button> -->
+    <button class="page-header__menu-toggle page-header__toggle visually-hidden" type="button" aria-label="Переключатель меню"></button>
+    <!-- <button class="page-header__menu-toggle page-header__toggle--close" type="button" aria-label="Переключатель меню"></button> -->
     <nav class="page-header__nav main-nav">
-      <ul class="main-nav__list main-nav--opened-nojs">
-      <!-- <ul class="main-nav__list main-nav--opened"> -->
-      <!-- <ul class="main-nav__list main-nav--closed"> -->
+      <ul class="main-nav__list main-nav__list--nojs">
+      <!-- <ul class="main-nav__list main-nav__list--opened"> -->
+      <!-- <ul class="main-nav__list main-nav__list--closed"> -->
         <li class="main-nav__item main-nav__item--index">
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
@@ -36,25 +36,23 @@
         </li>
       </ul>
     </nav>
-    <div class="main-nav__header">
-      <a class="page-header__link" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
-        </picture>
-      </a>
-    </div>
-    <section class="page-header__intro">
-      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+    <a class="page-header__link" href="index.html">
       <picture>
-        <source media="(min-width: 768px)" srcset="img/text.svg">
-        <img class="page-header__intro-text" src="img/text-small.svg" width="229" height="39" alt="Курортный городок Седона»">
+        <source media="(min-width: 1200px)" srcset="img/logo.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
       </picture>
-    </section>
+    </a>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт курортного городка "SEDONA"</h1>
+    <section class="intro">
+      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/text.svg">
+        <img class="intro__text" src="img/text-small.svg" width="229" height="39" alt="Курортный городок Седона»">
+      </picture>
+    </section>
     <section class="gallery">
       <h2 class="visually-hidden">Фотогалерея</h2>
       <header class="gallery__header">
@@ -64,13 +62,13 @@
       <ul class="gallery__list">
         <li class="gallery__item gallery-photo">
           <a class="gallery-photo__link">
-          <div class="gallery-photo__wrapper gallery-photo__wrapper--first">
-            <picture>
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/foreign-lands-desktop.webp 1x, img/foreign-lands-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/foreign-lands-desktop.jpg 1x, img/foreign-lands-desktop@2x.jpg 2x">
-              <img class="gallery-photo__image gallery-photo__image--first" src="img/foreign-lands.jpg" srcset="img/foreign-lands@2x.jpg 2x" width="280" height="280" alt="Фото дороги в лучах заката">
-            </picture>
-          </div>
+            <div class="gallery-photo__wrapper gallery-photo__wrapper--first">
+              <picture>
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/foreign-lands-desktop.webp 1x, img/foreign-lands-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)" srcset="img/foreign-lands-desktop.jpg 1x, img/foreign-lands-desktop@2x.jpg 2x">
+                <img class="gallery-photo__image gallery-photo__image--first" src="img/foreign-lands.jpg" srcset="img/foreign-lands@2x.jpg 2x" width="280" height="280" alt="Фото дороги в лучах заката">
+              </picture>
+            </div>
           </a>
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Неродные просторы</p>
@@ -91,7 +89,7 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Местная растительность</p>
             <p class="photo-description__author">Автор фото: Сергей</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">143</button>
+            <button class="photo-description__likes-button photo-description__likes-button--even" type="button" aria-label="Поставить лайк">143</button>
           </div>
         </li>
         <li class="gallery__item gallery-photo">
@@ -107,7 +105,7 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Дорога на север</p>
             <p class="photo-description__author">Автор фото: Пётр</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">96</button>
+            <button class="photo-description__likes-button photo-description__likes-button--odd" type="button" aria-label="Поставить лайк">96</button>
           </div>
         </li>
         <li class="gallery__item gallery-photo">
@@ -123,7 +121,7 @@
           <div class="gallery-photo__description photo-description">
             <p class="photo-description__title">Мост дьявола</p>
             <p class="photo-description__author">Автор фото: Антон</p>
-            <button class="photo-description__likes-button" type="button" aria-label="Поставить лайк">254</button>
+            <button class="photo-description__likes-button photo-description__likes-button--even" type="button" aria-label="Поставить лайк">254</button>
           </div>
         </li>
       </ul>

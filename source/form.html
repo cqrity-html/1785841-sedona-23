@@ -16,12 +16,12 @@
 
 <body class="page__body">
   <header class="page-header">
-    <!-- <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button> -->
-    <!-- <button class="main-nav__toggle--close" type="button" aria-label="Закрыть меню"></button> -->
+    <button class="page-header__menu-toggle page-header__toggle visually-hidden" type="button" aria-label="Переключатель меню"></button>
+    <!-- <button class="page-header__menu-toggle page-header__toggle--close" type="button" aria-label="Переключатель меню"></button> -->
     <nav class="page-header__nav main-nav">
-      <ul class="main-nav__list main-nav--opened-nojs">
-      <!-- <ul class="main-nav__list main-nav--opened"> -->
-      <!-- <ul class="main-nav__list main-nav--closed"> -->
+      <ul class="main-nav__list main-nav__list--nojs">
+      <!-- <ul class="main-nav__list main-nav__list--opened"> -->
+      <!-- <ul class="main-nav__list main-nav__list--closed"> -->
         <li class="main-nav__item main-nav__item--index">
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
@@ -36,25 +36,23 @@
         </li>
       </ul>
     </nav>
-    <div class="main-nav__header">
-      <a class="page-header__link" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
-        </picture>
-      </a>
-    </div>
-    <section class="page-header__intro">
-      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+    <a class="page-header__link" href="index.html">
       <picture>
-        <source media="(min-width: 768px)" srcset="img/text.svg">
-        <img class="page-header__intro-text" src="img/text-small.svg" width="229" height="39" alt="Курортный городок Седона»">
+        <source media="(min-width: 1200px)" srcset="img/logo.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
       </picture>
-    </section>
+    </a>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт курортного городка "SEDONA"</h1>
+    <section class="intro">
+      <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+      <picture>
+        <source media="(min-width: 768px)" srcset="img/text.svg">
+        <img class="intro__text" src="img/text-small.svg" width="229" height="39" alt="Курортный городок Седона»">
+      </picture>
+    </section>
     <section class="feedback">
       <header class="feedback__header">
         <h2 class="feedback__title">Оставьте свой отзыв</h2>
@@ -75,20 +73,20 @@
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--contacts">
           <legend class="feedback-form__title">Контактная информация:</legend>
-            <label class="feedback-form__label feedback-form__label--contact feedback-form__label--phone">
-              <span class="feedback-form__phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Контактный </span>телефон*:
-              <input class="feedback-form__field feedback-form__field--phone" type="tel" name="phone" placeholder="Введите телефон">
-              <svg class="feedback-form__field-icon feedback-form__field-icon--phone" width="58" height="58">
-                <use xlink:href="img/sprite.svg#icon-phone"></use>
-              </svg>
-            </label>
-            <label class="feedback-form__label feedback-form__label--contact feedback-form__label--email">
-              <span class="feedback-form__phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Электронная почта*:
-              <input class="feedback-form__field feedback-form__field--email" type="email" name="email" placeholder="Введите email">
-              <svg class="feedback-form__field-icon feedback-form__field-icon--email" width="58" height="58">
-                <use xlink:href="img/sprite.svg#icon-email"></use>
-              </svg>
-            </label>
+          <label class="feedback-form__label feedback-form__label--contact feedback-form__label--phone">
+            <span class="feedback-form__phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Контактный </span>телефон*:
+            <input class="feedback-form__field feedback-form__field--phone" type="tel" name="phone" placeholder="Введите телефон">
+            <svg class="feedback-form__field-icon feedback-form__field-icon--phone" width="58" height="58">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+            </svg>
+          </label>
+          <label class="feedback-form__label feedback-form__label--contact feedback-form__label--email">
+            <span class="feedback-form__phone">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>Электронная почта*:
+            <input class="feedback-form__field feedback-form__field--email" type="email" name="email" placeholder="Введите email">
+            <svg class="feedback-form__field-icon feedback-form__field-icon--email" width="58" height="58">
+              <use xlink:href="img/sprite.svg#icon-email"></use>
+            </svg>
+          </label>
         </fieldset>
         <fieldset class="feedback__fieldset feedback__fieldset--impression">
           <legend class="feedback-form__title feedback-form__title--impression">Ваше Общее впечатление:</legend>

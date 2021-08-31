@@ -1,5 +1,5 @@
 .video {
-  padding: 20px 0 100px 0;
+  padding: 18px 0 100px 0;
   background-color: var(--white);
   position: relative;
   padding-bottom: 103px;
@@ -9,7 +9,7 @@
   }
 
   @media (min-width: 1200px) {
-    padding: 50px 60px 66px 60px;
+    padding: 48px 60px 66px 60px;
   }
 }
 
@@ -17,7 +17,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  margin-top: 12px;
+  margin-top: 13px;
 
   @media (min-width: 768px) {
     font-size: 30px;

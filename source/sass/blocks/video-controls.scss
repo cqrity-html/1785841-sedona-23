@@ -82,13 +82,13 @@
 
 .video-controls__buttons {
   box-sizing: border-box;
-  width: 85%;
+  width: 88%;
   height: 66px;
   background-color: var(--beige);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 14px;
+  padding: 0 20px 0 16px;
   gap: 21px;
   position: relative;
 
@@ -96,12 +96,13 @@
     width: 648px;
     position: absolute;
     background: none;
-    padding: 0 30px;
+    padding: 0 34px 0 30px;
   }
 
   @media (min-width: 1200px) {
     width: 800px;
     margin-left: 23px;
+    padding: 0 36px 0 28px;
   }
 }
 
