@@ -11,6 +11,7 @@
   transform: translateX(-50%);
   background-position: center;
   z-index: 3;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     top: 0;
@@ -20,6 +21,14 @@
     width: 187px;
     height: 96px;
   }
+}
+
+.page-header__logo--index {
+  cursor: default;
+}
+
+.page-header__link {
+  cursor: pointer;
 }
 
 .page-header__link--index {
