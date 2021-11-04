@@ -8,7 +8,7 @@
   margin: 0;
   position: absolute;
   width: 100%;
-  margin-bottom: 56px;
+  display: none;
 
   @media (min-width: 768px) {
     display: flex;
@@ -26,23 +26,8 @@
   }
 }
 
-.main-nav__list--nojs,
 .main-nav__list--opened {
   position: static;
-}
-
-.main-nav__list--closed {
-  display: none;
-
-  @media (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    justify-content: space-between;
-    box-sizing: border-box;
-    flex-wrap: wrap;
-    max-height: 556px;
-  }
 }
 
 .main-nav__item {

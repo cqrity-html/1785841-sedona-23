@@ -9,19 +9,23 @@
   <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<!--   <link rel="preload" href="fonts/ptsans.woff" as="font" type="font/woff" crossorigin="anonymous">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <button class="page-header__menu-toggle page-header__toggle visually-hidden" type="button" aria-label="Переключатель меню"></button>
-    <!-- <button class="page-header__menu-toggle page-header__toggle--close" type="button" aria-label="Переключатель меню"></button> -->
+    <a class="page-header__link page-header__link--index">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
+      </picture>
+    </a>
+    <button class="page-header__menu-toggle page-header__menu-toggle--open" type="button" aria-label="Переключатель меню"></button>
     <nav class="page-header__nav main-nav">
-      <ul class="main-nav__list main-nav__list--nojs">
-      <!-- <ul class="main-nav__list main-nav__list--opened"> -->
-      <!-- <ul class="main-nav__list main-nav__list--closed"> -->
+      <ul class="main-nav__list main-nav__list--opened">
         <li class="main-nav__item main-nav__item--index">
           <a class="main-nav__link main-nav__link--current">Главная</a>
         </li>
@@ -36,13 +40,6 @@
         </li>
       </ul>
     </nav>
-    <a class="page-header__link page-header__link--index">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
-      </picture>
-    </a>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт курортного городка Седона</h1>
@@ -70,7 +67,7 @@
           <div class="advantages__photo-wrapper">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/advantage-image-first.webp 1x, img/advantage-image-first@2x.webp 2x">
-              <source type="image/webp" srcset="img/advantage-image-first-mobile.webp 1x, img/advantage-image-first-mobile@2x.webp 2x">
+              <source type="image/webp" srcset="img/advantage-image-first-mobile.webp 1x, img/advantage-image-first-mobile.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/advantage-image-first.jpg 1x, img/advantage-image-first@2x.jpg 2x">
               <img class="advantages__image" src="img/advantage-image-first-mobile.jpg" srcset="img/advantage-image-first-mobile@2x.jpg 2x" width="800" height="260" alt="Фото города">
             </picture>

@@ -7,7 +7,7 @@
 .page-header__logo {
   position: absolute;
   left: 50%;
-  bottom: -27px;
+  bottom: none;
   transform: translateX(-50%);
   background-position: center;
   z-index: 3;
@@ -26,8 +26,9 @@
   cursor: default;
 }
 
-.page-header__toggle,
-.page-header__toggle--close {
+.page-header__menu-toggle,
+.page-header__toggle--close,
+.page-header__menu-toggle--open {
   position: absolute;
   border: none;
   background: none;
@@ -41,11 +42,7 @@
   }
 }
 
-.page-header__toggle--nojs {
-  display: none;
-}
-
-.page-header__toggle::before {
+.page-header__menu-toggle--open::before {
   content: "";
   position: absolute;
   width: 22px;
@@ -57,62 +54,30 @@
   background-position: 0 0;
 }
 
-.page-header__toggle:hover::before {
+.page-header__menu-toggle--close::before {
   content: "";
   position: absolute;
   width: 22px;
   height: 22px;
   top: 0;
   right: 0;
-  background-image: url("../img/icon-menu-hover.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.page-header__toggle:active::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 0;
-  background-image: url("../img/icon-menu-active.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
-
-.page-header__toggle--close::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 10px;
   background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.page-header__toggle--close:hover::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 10px;
-  background-image: url("../img/icon-cross-hover.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+.page-header__menu-toggle--open:hover::before {
+  background-image: url("../img/icon-menu-hover.svg");
 }
 
-.page-header__toggle--close:active::before {
-  content: "";
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  top: 0;
-  right: 10px;
+.page-header__menu-toggle--open:active::before {
+  background-image: url("../img/icon-menu-active.svg");
+}
+
+.page-header__menu-toggle--close:hover::before {
+  background-image: url("../img/icon-cross-hover.svg");
+}
+
+.page-header__menu-toggle--close:active::before {
   background-image: url("../img/icon-cross-active.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }

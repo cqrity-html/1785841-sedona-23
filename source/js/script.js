@@ -11,6 +11,30 @@ let feedbackFamilyName = document.querySelector('.feedback-form__label--family-n
 let feedbackPhone = document.querySelector('.feedback-form__field--phone');
 let feedbackEmail = document.querySelector('.feedback-form__field--email');
 
+
+let mainNav = document.querySelector('.main-nav__list');
+let mainNavToggle = document.querySelector('.page-header__menu-toggle');
+let mainLogo = document.querySelector('.page-header__logo');
+
+//MAIN-NAV
+
+if (mainNav && mainNavToggle) {
+
+  mainNavToggle.addEventListener('click', function () {
+    if (mainNav.style.display = 'none') {
+      mainNav.style.display = 'block';
+      mainNavToggle.classList.remove('page-header__menu-toggle--open');
+      mainNavToggle.classList.add('page-header__menu-toggle--close');
+      mainLogo.style.bottom = '-84px';
+    } else {
+      mainNav.style.display = 'none';
+      mainNavToggle.classList.remove('page-header__menu-toggle--close');
+      mainNavToggle.classList.add('page-header__menu-toggle--open');
+      mainLogo.style.bottom = 'none';
+    }
+  });
+}
+
 if (modal && modalError && modalSuccess && modalButtonClose && modalButtonOk && feedbackButton && feedbackForm && feedbackName && feedbackPhone && feedbackEmail && feedbackFamilyName) {
 
   feedbackForm.addEventListener('submit', function (evt) {

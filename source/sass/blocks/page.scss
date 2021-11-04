@@ -7,12 +7,13 @@
   padding: 0;
   min-height: 100%;
   text-transform: uppercase;
-  background-color: var(--page-back);
+  background-color: white;
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   position: relative;
 
   @media (min-width: 1200px) {
     @include wrapper;
+    background-color: var(--page-back);
   }
 }
