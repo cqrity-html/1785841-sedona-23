@@ -11,6 +11,7 @@
   position: relative;
   padding-bottom: 14px;
   box-sizing: border-box;
+  margin-top: 56px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/intro-small@2x.jpg");
@@ -21,6 +22,7 @@
     padding-bottom: 24px;
     padding-left: 5px;
     background-image: url("../img/intro.jpg");
+    margin-top: 0;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/intro@2x.jpg");

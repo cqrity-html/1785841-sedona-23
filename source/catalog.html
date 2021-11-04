@@ -16,12 +16,16 @@
 
 <body class="page__body">
   <header class="page-header">
-    <button class="page-header__menu-toggle page-header__toggle visually-hidden" type="button" aria-label="Переключатель меню"></button>
-    <!-- <button class="page-header__menu-toggle page-header__toggle--close" type="button" aria-label="Переключатель меню"></button> -->
+    <a class="page-header__link page-header__link--index">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
+      </picture>
+    </a>
+    <button class="page-header__menu-toggle page-header__menu-toggle--open" type="button" aria-label="Переключатель меню"></button>
     <nav class="page-header__nav main-nav">
-      <ul class="main-nav__list main-nav__list--nojs">
-      <!-- <ul class="main-nav__list main-nav__list--opened"> -->
-      <!-- <ul class="main-nav__list main-nav__list--closed"> -->
+      <ul class="main-nav__list main-nav__list--closed">
         <li class="main-nav__item main-nav__item--index">
           <a class="main-nav__link" href="index.html">Главная</a>
         </li>
@@ -36,13 +40,6 @@
         </li>
       </ul>
     </nav>
-    <a class="page-header__link" href="index.html">
-      <picture>
-        <source media="(min-width: 1200px)" srcset="img/logo.svg">
-        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-        <img class="page-header__logo" src="img/logo-small.svg" width="102" height="84" alt="Логотип курортного городока Седона»">
-      </picture>
-    </a>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт курортного городка "SEDONA"</h1>

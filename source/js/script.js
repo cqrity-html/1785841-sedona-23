@@ -19,15 +19,16 @@ let mainLogo = document.querySelector('.page-header__logo');
 //MAIN-NAV
 
 if (mainNav && mainNavToggle) {
-
   mainNavToggle.addEventListener('click', function () {
-    if (mainNav.style.display = 'none') {
-      mainNav.style.display = 'block';
+    if (mainNav.classList.contains('main-nav__list--closed')) {
+      mainNav.classList.remove('main-nav__list--closed');
+      mainNav.classList.add('main-nav__list--opened');
       mainNavToggle.classList.remove('page-header__menu-toggle--open');
       mainNavToggle.classList.add('page-header__menu-toggle--close');
       mainLogo.style.bottom = '-84px';
-    } else {
-      mainNav.style.display = 'none';
+    } else if (mainNav.classList.contains('main-nav__list--opened')) {
+      mainNav.classList.remove('main-nav__list--opened');
+      mainNav.classList.add('main-nav__list--closed');
       mainNavToggle.classList.remove('page-header__menu-toggle--close');
       mainNavToggle.classList.add('page-header__menu-toggle--open');
       mainLogo.style.bottom = 'none';
