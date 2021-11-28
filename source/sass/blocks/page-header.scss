@@ -1,3 +1,4 @@
+/* stylelint-disable */
 .page-header {
   position: relative;
   display: -webkit-box;
@@ -97,3 +98,4 @@
 .page-header__menu-toggle--close:active::before {
   background-image: url("../img/icon-cross-active.svg");
 }
+/* stylelint-enable */
